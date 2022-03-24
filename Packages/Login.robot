@@ -93,32 +93,34 @@ ${invalidpassword}  admin123password
     Click Login
     Verify Login Success
     Logout
-7.0 Login - Forgot Password: Enter invalid address
-    [Tags]  forgot
-    Log to Console      Click "Forgot password" functionality
-    Click Link          Forgot your password?
-    Log to Console      Input invalid email address
-    Input Forgot Password Username      ${invalidemail}
-    Wait Until Element is Visible       ${reset_error_msg}      60s
-    Log to Console      Click "Reset Password" button
-    Click element       ${btn_reset}
-    Log to Console      Error message should appear
-7.0 Login - Forgot Password: Enter valid address
-    [Tags]  forgot
-    Go Back
-    Log to Console      Click "Forgot password" functionality
-    Click Link          Forgot your password?
-    Log to Console      Input valid email address
-    Input Forgot Password Username      ${normal}
-    Log to Console      Click "Reset Password" button
-    Click element       ${btn_reset}
-    Wait Until Element is Visible       ${prompt_reset}     60s
-#7.0 Login - Forgot Password: Check reset password email
+#7.0 Login - Forgot Password: Enter invalid address
 #    [Tags]  forgot
-#    Launch Browser      ${mailinator}       ${browser}
-#    ${head}=    get title
+#    Log to Console      Click "Forgot password" functionality
+#    Click Link          Forgot your password?
+#    Log to Console      Input invalid email address
+#    Input Forgot Password Username      ${invalidemail}
+#    Wait Until Element is Visible       ${reset_error_msg}      60s
+#    Log to Console      Click "Reset Password" button
+#    Click element       ${btn_reset}
+#    Log to Console      Error message should appear
+#7.0 Login - Forgot Password: Enter valid address
+#    [Tags]  forgot
+#    Go Back
+#    Log to Console      Click "Forgot password" functionality
+#    Click Link          Forgot your password?
+#    Log to Console      Input valid email address
+#    Input Forgot Password Username      ${normal}
+#    Log to Console      Click "Reset Password" button
+#    Click element       ${btn_reset}
+#    Wait Until Element is Visible       ${prompt_reset}     60s
+7.0 Login - Forgot Password: Check reset password email
+    [Tags]  forgot
+    Launch Browser      ${mailinator}       ${browser}
+#    ${head}=        get title
 #    Log to Console  ${head}
-#    ${testuser}=    Remove String       ${normal}       @mailinator.com
+    ${testuser}=    Remove String       ${normal}       @mailinator.com
+    Log to Console  ${testuser}
+#    Wait Until Element is Visible       ${public_mail}  10s
 #    Input text      ${public_mail}      ${testuser}
 #    Click element   ${go_generate}
 *** Keywords ***
