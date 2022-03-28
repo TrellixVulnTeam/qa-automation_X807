@@ -13,8 +13,14 @@ btn_reset = "xpath:/html/body/div/div/section/section/section/div/div/form/div[2
 prompt_reset = "xpath:/html/body/div/div/section/section/section/div[1]/div/div/div[2]/div"
 
 # Mailinator
-public_mail = "xpath:/html/body/div[1]/header[2]/div[2]/div/div/div[2]"
+public_mail = "xpath:/html/body/div[1]/header[1]/div[1]/div/div/div[1]/div/input"
 go_generate = "xpath:/html/body/div[1]/header[1]/div[1]/div/div/div[1]/div/button"
+public_inbox = "xpath:/html/body/div/main/div[2]/div[3]/div/div[4]/div/div"
+notif_sender = "xpath:/html/body/div/main/div[2]/div[3]/div/div[4]/div/div/table/tbody/tr[1]/td[2]"
+notif_title = "xpath:/html/body/div/main/div[2]/div[3]/div/div[4]/div/div/table/tbody/tr[1]/td[3]"
+
+# Gmail
+gmail_input = "xpath:/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div/div[1]/div/div[1]/input"
 
 # Company Dashboard elements
 companies = "xpath:/html/body/div/div/section/section[1]/div"
