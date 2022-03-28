@@ -17,6 +17,7 @@ Test Teardown   Teardown Properties
 ${browser}  chrome
 ${url}      https://accounts.detailonline.com/
 ${mailinator}       https://www.mailinator.com/
+${gmail}    https://mail.google.com/
 ${admin}    issa.david@detailonline.tech
 ${admin_pass}       Packages1
 ${owner}    msprice-own@mailinator.com
@@ -93,36 +94,44 @@ ${invalidpassword}  admin123password
     Click Login
     Verify Login Success
     Logout
-#7.0 Login - Forgot Password: Enter invalid address
-#    [Tags]  forgot
-#    Log to Console      Click "Forgot password" functionality
-#    Click Link          Forgot your password?
-#    Log to Console      Input invalid email address
-#    Input Forgot Password Username      ${invalidemail}
-#    Wait Until Element is Visible       ${reset_error_msg}      60s
-#    Log to Console      Click "Reset Password" button
-#    Click element       ${btn_reset}
-#    Log to Console      Error message should appear
-#7.0 Login - Forgot Password: Enter valid address
-#    [Tags]  forgot
-#    Go Back
-#    Log to Console      Click "Forgot password" functionality
-#    Click Link          Forgot your password?
-#    Log to Console      Input valid email address
-#    Input Forgot Password Username      ${normal}
-#    Log to Console      Click "Reset Password" button
-#    Click element       ${btn_reset}
-#    Wait Until Element is Visible       ${prompt_reset}     60s
+7.0 Login - Forgot Password: Enter invalid address
+    [Tags]  forgot
+    Log to Console      Click "Forgot password" functionality
+    Click Link          Forgot your password?
+    Log to Console      Input invalid email address
+    Input Forgot Password Username      ${invalidemail}
+    Wait Until Element is Visible       ${reset_error_msg}      60s
+    Log to Console      Click "Reset Password" button
+    Click element       ${btn_reset}
+    Log to Console      Error message should appear
+7.0 Login - Forgot Password: Enter valid address
+    [Tags]  forgot
+    Go Back
+    Log to Console      Click "Forgot password" functionality
+    Click Link          Forgot your password?
+    Log to Console      Input valid email address
+    Input Forgot Password Username      ${normal}
+    Log to Console      Click "Reset Password" button
+    Click element       ${btn_reset}
+    Wait Until Element is Visible       ${prompt_reset}     60s
 7.0 Login - Forgot Password: Check reset password email
     [Tags]  forgot
     Launch Browser      ${mailinator}       ${browser}
-#    ${head}=        get title
-#    Log to Console  ${head}
+#    Launch Browser      ${gmail}        ${browser}
+    ${head}=        get title
+    Log to Console  ${head}
+#    Wait Until Element is Visible       ${gmail_input}     10s
     ${testuser}=    Remove String       ${normal}       @mailinator.com
     Log to Console  ${testuser}
-#    Wait Until Element is Visible       ${public_mail}  10s
-#    Input text      ${public_mail}      ${testuser}
-#    Click element   ${go_generate}
+    Wait Until Element is Visible       ${public_mail}  10s
+    Input text      ${public_mail}      ${testuser}
+    Click element   ${go_generate}
+    Wait Until Element is Visible       ${public_inbox}     15s
+    Log to Console  Opening ${testuser} inbox...
+    Wait Until Element is Visible       ${notif_sender}     15s
+    ${sender}=      Get Text        ${notif_sender}
+    Log to Console  Checking sender is ${sender}...
+
 *** Keywords ***
 Setup Properties
     Set Selenium Speed  2s
