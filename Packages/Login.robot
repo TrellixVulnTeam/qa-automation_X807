@@ -129,8 +129,17 @@ ${invalidpassword}  admin123password
     Wait Until Element is Visible       ${public_inbox}     15s
     Log to Console  Opening ${testuser} inbox...
     Wait Until Element is Visible       ${notif_sender}     15s
+    Element Text Should Be      ${notif_sender}     support@detailonline.com
     ${sender}=      Get Text        ${notif_sender}
-    Log to Console  Checking sender is ${sender}...
+    Log to Console  Message from ${sender}...
+    Wait Until Element is Visible       ${notif_title}      15s
+    Element Text Should Be      ${notif_title}      Detail Online - Password Reset
+    ${title}=       Get Text        ${notif_title}
+    Log to Console  Subject of email is ${title}...
+    Click element   ${notif_title}
+    Wait Until Element is Visible      ${mail_body}        15s
+    Execute javascript  window.scrollTo(0,document.querySelector("html").scrollHeight)
+    Log to Console  Scrolled to bottom
 
 *** Keywords ***
 Setup Properties

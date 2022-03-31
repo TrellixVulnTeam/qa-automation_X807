@@ -18,6 +18,8 @@ go_generate = "xpath:/html/body/div[1]/header[1]/div[1]/div/div/div[1]/div/butto
 public_inbox = "xpath:/html/body/div/main/div[2]/div[3]/div/div[4]/div/div"
 notif_sender = "xpath:/html/body/div/main/div[2]/div[3]/div/div[4]/div/div/table/tbody/tr[1]/td[2]"
 notif_title = "xpath:/html/body/div/main/div[2]/div[3]/div/div[4]/div/div/table/tbody/tr[1]/td[3]"
+mail_body = 'xpath:/html/body/div/main/div[1]/div/div[3]/div/div[1]'
+reset_link = 'xpath:/html/body/table/tbody/tr/td/table/tbody/tr[3]/td/table/tbody/tr/td/p/span[2]/a'
 
 # Gmail
 gmail_input = "xpath:/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div/div[1]/div/div[1]/input"
