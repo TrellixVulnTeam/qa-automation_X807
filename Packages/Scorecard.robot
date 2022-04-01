@@ -9,8 +9,8 @@ Suite Teardown  Close All Browsers
 *** Variables ***
 ${browser}  chrome
 ${url}      https://accounts.detailonline.com/
-${user}     razer-own@mailinator.com
-${pass}     admin123
+${user}     msprice-own@mailinator.com
+${pass}     d3t@1l@dm1n
 
 *** Test Cases ***
 1.0 Scorecard: Verify access to page
@@ -22,14 +22,14 @@ ${pass}     admin123
 1.0 Scorecard: Verify date picker if working properly
     [Tags]  filter
     Check calendar
-#    Check month slider
-#    Check year slider
-1.0 Scorecard: Verify Overall % calculation
-    [Tags]  compute
-    Verify Overall Score
-    Verify Display Pillar Score
-    Verify Inspire Pillar Score
-    Verify Convert Pillar Score
+    Check month slider
+    Check year slider
+#1.0 Scorecard: Verify Overall % calculation
+#    [Tags]  compute
+#    Verify Overall Score
+#    Verify Display Pillar Score
+#    Verify Inspire Pillar Score
+#    Verify Convert Pillar Score
 
 #I CAN'T FREAKING ACCESS THE SCORE TREND!!!!!!
 #1.0 Scorecard: Verify Scorecard variance % calculation

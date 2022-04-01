@@ -21,9 +21,6 @@ notif_title = "xpath:/html/body/div/main/div[2]/div[3]/div/div[4]/div/div/table/
 mail_body = 'xpath:/html/body/div/main/div[1]/div/div[3]/div/div[1]'
 reset_link = 'xpath:/html/body/table/tbody/tr/td/table/tbody/tr[3]/td/table/tbody/tr/td/p/span[2]/a'
 
-# Gmail
-gmail_input = "xpath:/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div/div[1]/div/div[1]/input"
-
 # Company Dashboard elements
 companies = "xpath:/html/body/div/div/section/section[1]/div"
 detail_logo = "xpath:/html/body/div/div/section/section[2]/a"
@@ -74,15 +71,15 @@ date_navbar = "xpath:/html/body/div[1]/div/section/section[1]/div[1]/div[1]/div/
 calendar = "xpath:/html/body/div[2]/div[1]/div/div[1]"
 date_picker = "xpath:/html/body/div[1]/div/section/section[1]/div[1]/div[1]/div/div/div[2]/div[1]/div/div/div[2]/div/input"
 date_select = "xpath:/html/body/div[2]/div[1]/div/div[2]/table[1]/tbody/tr[2]/td[4]/div"
-next_month_slider = "xpath:/html/body/div[4]/div[1]/div/div[1]/button[4]"
-prev_month_slider = "xpath:/html/body/div[4]/div[1]/div/div[1]/button[2]"
-next_year_slider = "xpath:/html/body/div[4]/div[1]/div/div[1]/button[3]"
-prev_year_slider = "xpath:/html/body/div[4]/div[1]/div/div[1]/button[1]"
+next_month_slider = "xpath:/html/body/div[2]/div[1]/div/div[1]/button[4]"
+prev_month_slider = "xpath:/html/body/div[2]/div[1]/div/div[1]/button[2]"
+next_year_slider = "xpath:/html/body/div[2]/div[1]/div/div[1]/button[3]"
+prev_year_slider = "xpath:/html/body/div[2]/div[1]/div/div[1]/button[1]"
 year_selection = "xpath:/html/body/div[4]/div[1]/div/div[1]/span[1]"
 month_selection = "xpath:/html/body/div[4]/div[1]/div/div[1]/span[2]"
 
 # Worldmap elements
-worldmap_rect = "xpath:/html/body/div[1]/div/section/section[1]/div[1]/div[1]/div/section/div[1]/div/section/div"
+scoretrend = "xpath:/html/body/div/div/section/section[1]/div[1]/div[1]/div/section/div[1]/div[2]/div/div[1]"
 
 # Panel elements
 country_panel_scorecard = "xpath:/html/body/div[1]/div/section/section[1]/div[1]/div[1]/div/section/div[2]/div[1]"

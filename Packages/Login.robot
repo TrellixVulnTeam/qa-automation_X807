@@ -5,7 +5,7 @@ Resource    ../Resources/LoginKeywords.robot
 # chromedrive path : C:\Users\my User Folder\AppData\Local\Programs\Python\Python38\Scripts
 
 #Suite Setup runs only once. headlesschrome is used to run in the background
-Suite Setup     Launch Browser      ${url}      ${browser}      #headlesschrome
+Suite Setup     Launch Browser      ${url}      headlesschrome      #${browser}
 #Suite Teardown happens at the very end of execution
 Suite Teardown  Close All Browsers
 
@@ -117,10 +117,8 @@ ${invalidpassword}  admin123password
 7.0 Login - Forgot Password: Check reset password email
     [Tags]  forgot
     Launch Browser      ${mailinator}       ${browser}
-#    Launch Browser      ${gmail}        ${browser}
     ${head}=        get title
     Log to Console  ${head}
-#    Wait Until Element is Visible       ${gmail_input}     10s
     ${testuser}=    Remove String       ${normal}       @mailinator.com
     Log to Console  ${testuser}
     Wait Until Element is Visible       ${public_mail}  10s
