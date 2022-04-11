@@ -75,16 +75,16 @@ next_month_slider = "xpath:/html/body/div[2]/div[1]/div/div[1]/button[4]"
 prev_month_slider = "xpath:/html/body/div[2]/div[1]/div/div[1]/button[2]"
 next_year_slider = "xpath:/html/body/div[2]/div[1]/div/div[1]/button[3]"
 prev_year_slider = "xpath:/html/body/div[2]/div[1]/div/div[1]/button[1]"
-year_selection = "xpath:/html/body/div[4]/div[1]/div/div[1]/span[1]"
-month_selection = "xpath:/html/body/div[4]/div[1]/div/div[1]/span[2]"
+year_selection = "xpath:/html/body/div[2]/div[1]/div/div[1]/span[1]"
+month_selection = "xpath:/html/body/div[2]/div[1]/div/div[1]/span[2]"
 
 # Worldmap elements
 scoretrend = "xpath:/html/body/div/div/section/section[1]/div[1]/div[1]/div/section/div[1]/div[2]/div/div[1]"
 
 # Panel elements
-country_panel_scorecard = "xpath:/html/body/div[1]/div/section/section[1]/div[1]/div[1]/div/section/div[2]/div[1]"
-retailer_panel_scorecard = "xpath:/html/body/div[1]/div/section/section[1]/div[1]/div[1]/div/section/div[2]/div[2]"
-prodgroup_panel_scorecard = "xpath:/html/body/div[1]/div/section/section[1]/div[1]/div[1]/div/section/div[2]/div[3]"
+country_panel_scorecard = "xpath:/html/body/div[1]/div/section/section[1]/div[1]/div[1]/div/section/div[2]/div[1]/div[1]"
+retailer_panel_scorecard = "xpath:/html/body/div[1]/div/section/section[1]/div[1]/div[1]/div/section/div[2]/div[2]/div[1]"
+prodgroup_panel_scorecard = "xpath:/html/body/div[1]/div/section/section[1]/div[1]/div[1]/div/section/div[2]/div[3]/div[1]"
 
 # Filter elements
 country_filter = "xpath:/html/body/div[1]/div/section/section[1]/div[2]/section/div[1]/div[2]/form[1]/div[1]/div/div/div/input"
@@ -102,3 +102,5 @@ ratings_pillar = "xpath:/html/body/div[1]/div/section/section[1]/div[1]/div[1]/d
 
 # Convert elements
 instock_pillar = "xpath:/html/body/div[1]/div/section/section[1]/div[1]/div[1]/div/div[1]/div[2]/div[2]/a[1]/div/div/section/div/div/div/span[1]"
+
+# robot --timestampoutputs --log log.html --report NONE

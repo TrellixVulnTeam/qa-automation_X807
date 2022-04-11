@@ -15,21 +15,57 @@ Login to App
     Verify Login Success
 
 Check Date filter
-    Wait Until Element Is Visible   ${date_navbar}      15s
+    Wait Until Element Is Visible   ${date_navbar}      60s
     Log to Console      contains date picker nav bar
-    Wait Until Element Is Visible   ${date_picker}      15s
+    Wait Until Element Is Visible   ${date_picker}      60s
     Log to Console      contains date picker button
     Check calendar
     Check month slider
     Check year slider
 
+Check calendar
+    Click Element   ${date_picker}
+    Log to Console  Calendar is Visible
+    Click Element   ${date_picker}
+
+Check month slider
+    Click Element   ${date_picker}
+    Wait Until Element is Visible   ${next_month_slider}    60s
+    ${curr}=    get text    ${month_selection}
+    Log to Console  Current Month: ${curr}
+    Click Element   ${next_month_slider}
+    ${next}=    get text    ${month_selection}
+    Log to Console  Next Month: ${next}
+    Click Element   ${prev_month_slider}
+    Click Element   ${prev_month_slider}
+    ${prev}=    get text    ${month_selection}
+    Log to Console  Previous Month: ${prev}
+
+Check year slider
+#    Click Element   ${date_picker}
+    Wait Until Element is Visible   ${next_year_slider}     60s
+    ${curr}=    get text    ${year_selection}
+    Log to Console  Current Year: ${curr}
+    Click Element   ${next_year_slider}
+    ${next}=    get text    ${year_selection}
+    Log to Console  Next Year: ${next}
+    Click Element   ${prev_year_slider}
+    Click Element   ${prev_year_slider}
+    ${prev}=    get text    ${year_selection}
+    Log to Console  Previous Year: ${prev}
+
 Check Panel Scores
-    Wait Until Element Is Visible   ${country_panel_scorecard}      15s
-    Log to Console      contains Country section
+    Scroll Element into View        ${country_panel_scorecard}
+    ${country}=     get text        ${country_panel_scorecard}
+    Log to Console      contains ${country} section
     Wait Until Element Is Visible   ${retailer_panel_scorecard}     15s
-    Log to Console      contains Retailer section
+    ${retailer}=     get text       ${retailer_panel_scorecard}
+    Log to Console      contains ${retailer} section
     Wait Until Element Is Visible   ${prodgroup_panel_scorecard}    15s
-    Log to Console      contains Product Group section
+    ${prodgroup}=     get text      ${prodgroup_panel_scorecard}
+    Log to Console      contains ${prodgroup} section
+
+Check Filters Panel
     Wait Until Element Is Visible   ${country_filter}       15s
     Log to Console      contains Filters panel
     Log to Console      contains Country filter in Filters
@@ -60,24 +96,3 @@ Check Overall Pillars
     Wait Until Element Is Visible   ${worldmap_rect}    15s
     Log to Console      contains world map
 
-Check calendar
-    Click Element   ${date_picker}
-    Log to Console  Calendar is Visible
-    Click Element   ${date_picker}
-
-Check month slider
-    Click Element   ${date_picker}
-    Wait Until Element is Visible   ${next_month_slider}    60s
-    ${curr}=    get text    ${month_selection}
-    Log to Console  Current Month: ${curr}
-    Click Element   ${next_month_slider}
-    ${next}=    get text    ${month_selection}
-    Log to Console  Next Month: ${next}
-    Click Element   ${prev_month_slider}
-    Click Element   ${prev_month_slider}
-    ${prev}=    get text    ${month_selection}
-    Log to Console  Previous Month: ${prev}
-
-Check year slider
-    Click Element   ${date_picker}
-    Wait Until Element is Visible   ${next_year_slider}     60s

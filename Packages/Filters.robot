@@ -14,8 +14,11 @@ ${pass}     d3t@1l@dm1n
 
 *** Test Cases ***
 1.0 Filters: Verify date filter
+    [Tags]  date
     Check Date filter
-
+1.0 Filters: Verify panel scores
+    [Tags]  scores
+    Check Panel Scores
 *** Keywords ***
 Setup Properties
     Launch Browser      ${url}      ${browser}
