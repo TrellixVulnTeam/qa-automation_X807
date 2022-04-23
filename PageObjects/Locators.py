@@ -29,7 +29,6 @@ user_profile = "xpath:/html/body/div/div/section/section[2]/div[1]/div[2]/div/di
 users_btn = "xpath:/html/body/ul/a[1]/li"
 companies_btn = "xpath:/html/body/ul/a[2]/li"
 invitations_btn = "xpath:/html/body/ul/a[3]/li"
-adminlogout_btn = "xpath:/html/body/ul/li"
 logout_btn = "xpath:/html/body/ul[1]/li"
 logout_dashboard = "xpath:/html/body/ul/li"
 razer_btn = "xpath:/html/body/div/div/section/section[1]/div/div[2]/div/div[3]/table/tbody/tr[3]/td[4]/div/button"
@@ -104,3 +103,17 @@ ratings_pillar = "xpath:/html/body/div[1]/div/section/section[1]/div[1]/div[1]/d
 instock_pillar = "xpath:/html/body/div[1]/div/section/section[1]/div[1]/div[1]/div/div[1]/div[2]/div[2]/a[1]/div/div/section/div/div/div/span[1]"
 
 # robot --timestampoutputs --log log.html --report NONE
+
+### CMS Variables ###
+#Login
+cms_username = "xpath:/html/body/div/div/section/section/section/div/div/div/form/div[1]/div/div[1]/input"
+cms_password = "xpath:/html/body/div/div/section/section/section/div/div/div/form/div[2]/div/div/input"
+cms_loginbtn = "xpath:/html/body/div/div/section/section/section/div/div/div/form/div[3]/div/button"
+
+#Companies
+add_companybtn = "xpath:/html/body/div/div/section/main/section/div/div[1]/div/button"
+cms_profile = "xpath:/html/body/div/div/section/header/section/div/div/div/div/div"
+addcomp_close = "xpath:/html/body/div[1]/div/section/main/section/div/div[2]/div[2]/div/div[1]/button"
+addcomp_isactive = "xpath:/html/body/div[1]/div/section/main/section/div/div[2]/div[2]/div/div[2]/form/div[2]/div/div/span"
+addcomp_name = "xpath:/html/body/div[1]/div/section/main/section/div/div[2]/div[2]/div/div[2]/form/div[1]/div/div/input"
+addcomp_tabs = "xpath:/html/body/div[1]/div/section/main/section/div/div[2]/div[2]/div/div[2]/form/div[3]/div[1]/div/div/div/div"

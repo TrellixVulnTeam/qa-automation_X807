@@ -13,6 +13,11 @@ Input Username
     Log to Console  Inputting username...
     Input text      ${field_username}   ${username}
     Log to Console  Username:${username} inputted.
+Input CMS Username
+    [Arguments]     ${username}
+    Log to Console  Inputting username...
+    Input text      ${cms_username}     ${username}
+    Log to Console  Username:${username} inputted.
 Input Forgot Password Username
     [Arguments]     ${username}
     Log to Console  Inputting username...
@@ -22,6 +27,11 @@ Input Password
     [Arguments]     ${password}
     Log to Console  Inputting password...
     Input text      ${field_password}   ${password}
+    Log to Console  Password Inputted.
+Input CMS Password
+    [Arguments]     ${password}
+    Log to Console  Inputting password...
+    Input text      ${cms_password}   ${password}
     Log to Console  Password Inputted.
 Un/Hide Password
     Log to Console  Checking password input...
@@ -36,6 +46,9 @@ Verify Admin Login
 Verify Login Success
     Wait Until Element Is Visible   ${scorecard}    60s
     Log to Console  User logged in successfully
+Verify CMS Login Success
+    Wait Until Element Is Visible   ${add_companybtn}       60s
+    Log to Console  User logged in successfully
 Verify Error Message
     Wait Until Element Is Visible   ${error_msg}    60s
     Log to Console  Error message is displayed
@@ -49,6 +62,14 @@ Logout Admin
     Log to Console  Select Logout
     Click element   ${logout_btn}
     Wait Until Element is Visible   ${login_form}       10s
+    Log to Console  Admin Logged out
+Logout CMS Admin
+    Wait Until Element is Visible   ${cms_profile}      60s
+    Log to Console  Click User Profile dropdown
+    Click element   ${cms_profile}
+    Log to Console  Select Logout
+    Click element   ${logout_btn}
+    Wait Until Element is Visible   ${cms_password}     10s
     Log to Console  Admin Logged out
 Logout
     Wait Until Element is Visible   ${user_profile}     10s

@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.1 (Python 3.8.0 on win32)" generated="20220411 21:58:55.321" rpa="false">
-<suite id="s1" name="Filters" source="C:\Users\Rica Datoc\PycharmProjects\Packages\Packages\Filters.robot">
-<kw name="Setup Properties" type="setup">
-<kw name="Launch Browser" library="LoginKeywords">
+<robot generator="Robot 3.2.1 (Python 3.8.0 on win32)" generated="20220421 21:49:42.570" rpa="false">
+<suite id="s1" name="Companies" source="C:\Users\Rica Datoc\PycharmProjects\Packages\CMS\Companies.robot">
+<kw name="Launch Browser" library="LoginKeywords" type="setup">
 <arguments>
 <arg>${url}</arg>
 <arg>${browser}</arg>
@@ -12,7 +11,7 @@
 <arguments>
 <arg>Launching Browser...</arg>
 </arguments>
-<status status="PASS" starttime="20220411 21:58:55.812" endtime="20220411 21:58:55.813"></status>
+<status status="PASS" starttime="20220421 21:50:02.706" endtime="20220421 21:50:02.707"></status>
 </kw>
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the optional ``url``.</doc>
@@ -20,30 +19,50 @@
 <arg>${siteurl}</arg>
 <arg>${testbrowser}</arg>
 </arguments>
-<msg timestamp="20220411 21:58:55.815" level="INFO">Opening browser 'chrome' to base url 'https://accounts.detailonline.com/'.</msg>
-<status status="PASS" starttime="20220411 21:58:55.813" endtime="20220411 22:00:47.158"></status>
+<msg timestamp="20220421 21:50:02.709" level="INFO">Opening browser 'chrome' to base url 'https://detail-cms-staging.azurewebsites.net/'.</msg>
+<status status="PASS" starttime="20220421 21:50:02.708" endtime="20220421 21:51:36.508"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220411 22:00:47.158" endtime="20220411 22:00:47.726"></status>
+<status status="PASS" starttime="20220421 21:51:36.509" endtime="20220421 21:51:37.108"></status>
 </kw>
-<status status="PASS" starttime="20220411 21:58:55.812" endtime="20220411 22:00:47.727"></status>
+<status status="PASS" starttime="20220421 21:50:02.703" endtime="20220421 21:51:37.108"></status>
 </kw>
-<kw name="Login to App" library="FiltersKeywords">
+<test id="s1-t1" name="Login - Login using correct credentials">
+<kw name="Setup Properties" type="setup">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
 <arguments>
-<arg>${user}</arg>
-<arg>${pass}</arg>
+<arg>2s</arg>
 </arguments>
+<status status="PASS" starttime="20220421 21:51:37.110" endtime="20220421 21:51:37.111"></status>
+</kw>
+<kw name="Set Selenium Timeout" library="SeleniumLibrary">
+<doc>Sets the timeout that is used by various keywords.</doc>
+<arguments>
+<arg>60s</arg>
+</arguments>
+<status status="PASS" starttime="20220421 21:51:37.111" endtime="20220421 21:51:39.126"></status>
+</kw>
+<status status="PASS" starttime="20220421 21:51:37.110" endtime="20220421 21:51:39.128"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Input correct email address</arg>
+</arguments>
+<status status="PASS" starttime="20220421 21:51:39.130" endtime="20220421 21:51:39.132"></status>
+</kw>
 <kw name="Input Username" library="LoginKeywords">
 <arguments>
-<arg>${username}</arg>
+<arg>${admin}</arg>
 </arguments>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>Inputting username...</arg>
 </arguments>
-<status status="PASS" starttime="20220411 22:00:47.728" endtime="20220411 22:00:47.729"></status>
+<status status="PASS" starttime="20220421 21:51:39.137" endtime="20220421 21:51:39.139"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -51,35 +70,35 @@
 <arg>${field_username}</arg>
 <arg>${username}</arg>
 </arguments>
-<msg timestamp="20220411 22:00:47.729" level="INFO">Typing text 'msprice-own@mailinator.com' into text field 'xpath:/html/body/div/div/section/section/section/div[1]/div/div/form/div[1]/div/div/input'.</msg>
-<status status="PASS" starttime="20220411 22:00:47.729" endtime="20220411 22:00:48.193"></status>
+<msg timestamp="20220421 21:51:39.140" level="INFO">Typing text 'rica.datoc@detailonline.tech' into text field 'xpath:/html/body/div/div/section/section/section/div[1]/div/div/form/div[1]/div/div/input'.</msg>
+<status status="PASS" starttime="20220421 21:51:39.140" endtime="20220421 21:51:45.724"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>Username:${username} inputted.</arg>
 </arguments>
-<status status="PASS" starttime="20220411 22:00:48.193" endtime="20220411 22:00:48.194"></status>
+<status status="PASS" starttime="20220421 21:51:45.725" endtime="20220421 21:51:45.726"></status>
 </kw>
-<status status="PASS" starttime="20220411 22:00:47.728" endtime="20220411 22:00:48.195"></status>
+<status status="PASS" starttime="20220421 21:51:39.134" endtime="20220421 21:51:45.727"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
-<arg>Username entered.</arg>
+<arg>Input correct password</arg>
 </arguments>
-<status status="PASS" starttime="20220411 22:00:48.195" endtime="20220411 22:00:48.196"></status>
+<status status="PASS" starttime="20220421 21:51:45.728" endtime="20220421 21:51:45.729"></status>
 </kw>
 <kw name="Input Password" library="LoginKeywords">
 <arguments>
-<arg>${password}</arg>
+<arg>${admin_pass}</arg>
 </arguments>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>Inputting password...</arg>
 </arguments>
-<status status="PASS" starttime="20220411 22:00:48.197" endtime="20220411 22:00:48.197"></status>
+<status status="PASS" starttime="20220421 21:51:45.732" endtime="20220421 21:51:45.734"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -87,24 +106,57 @@
 <arg>${field_password}</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20220411 22:00:48.198" level="INFO">Typing text 'd3t@1l@dm1n' into text field 'xpath:/html/body/div/div/section/section/section/div[1]/div/div/form/div[2]/div/div[1]/input'.</msg>
-<status status="PASS" starttime="20220411 22:00:48.198" endtime="20220411 22:00:48.489"></status>
+<msg timestamp="20220421 21:51:45.735" level="INFO">Typing text 'ricadatoc123' into text field 'xpath:/html/body/div/div/section/section/section/div[1]/div/div/form/div[2]/div/div[1]/input'.</msg>
+<status status="PASS" starttime="20220421 21:51:45.734" endtime="20220421 21:51:52.340"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>Password Inputted.</arg>
 </arguments>
-<status status="PASS" starttime="20220411 22:00:48.489" endtime="20220411 22:00:48.490"></status>
+<status status="PASS" starttime="20220421 21:51:52.341" endtime="20220421 21:51:52.343"></status>
 </kw>
-<status status="PASS" starttime="20220411 22:00:48.196" endtime="20220411 22:00:48.490"></status>
+<status status="PASS" starttime="20220421 21:51:45.731" endtime="20220421 21:51:52.344"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
-<arg>Password entered.</arg>
+<arg>Select password seeker on login form</arg>
 </arguments>
-<status status="PASS" starttime="20220411 22:00:48.490" endtime="20220411 22:00:48.490"></status>
+<status status="PASS" starttime="20220421 21:51:52.345" endtime="20220421 21:51:52.347"></status>
+</kw>
+<kw name="Un/Hide Password" library="LoginKeywords">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Checking password input...</arg>
+</arguments>
+<status status="PASS" starttime="20220421 21:51:52.351" endtime="20220421 21:51:52.353"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${icon_private}</arg>
+</arguments>
+<msg timestamp="20220421 21:51:52.355" level="INFO">Clicking element 'xpath:/html/body/div/div/section/section/section/div[1]/div/div/form/div[2]/div/div/span'.</msg>
+<status status="PASS" starttime="20220421 21:51:52.354" endtime="20220421 21:51:56.523"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${icon_private}</arg>
+</arguments>
+<msg timestamp="20220421 21:51:56.525" level="INFO">Clicking element 'xpath:/html/body/div/div/section/section/section/div[1]/div/div/form/div[2]/div/div/span'.</msg>
+<status status="PASS" starttime="20220421 21:51:56.524" endtime="20220421 21:52:00.642"></status>
+</kw>
+<status status="PASS" starttime="20220421 21:51:52.348" endtime="20220421 21:52:00.643"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Select login button</arg>
+</arguments>
+<status status="PASS" starttime="20220421 21:52:00.644" endtime="20220421 21:52:00.646"></status>
 </kw>
 <kw name="Click Login" library="LoginKeywords">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -112,134 +164,181 @@
 <arguments>
 <arg>${btn_login}</arg>
 </arguments>
-<msg timestamp="20220411 22:00:48.492" level="INFO">Clicking element 'xpath:/html/body/div/div/section/section/section/div[1]/div/div/form/div[3]/div/button'.</msg>
-<status status="PASS" starttime="20220411 22:00:48.492" endtime="20220411 22:00:48.706"></status>
+<msg timestamp="20220421 21:52:00.650" level="INFO">Clicking element 'xpath:/html/body/div/div/section/section/section/div[1]/div/div/form/div[3]/div/button'.</msg>
+<status status="PASS" starttime="20220421 21:52:00.649" endtime="20220421 21:52:04.858"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>Waiting to Login...</arg>
 </arguments>
-<status status="PASS" starttime="20220411 22:00:48.707" endtime="20220411 22:00:48.708"></status>
+<status status="PASS" starttime="20220421 21:52:04.859" endtime="20220421 21:52:04.860"></status>
 </kw>
-<status status="PASS" starttime="20220411 22:00:48.492" endtime="20220411 22:00:48.709"></status>
+<status status="PASS" starttime="20220421 21:52:00.648" endtime="20220421 21:52:04.862"></status>
 </kw>
-<kw name="Verify Login Success" library="LoginKeywords">
+<kw name="Verify CMS Login Success" library="LoginKeywords">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
 <arguments>
-<arg>${scorecard}</arg>
+<arg>${add_companybtn}</arg>
 <arg>60s</arg>
 </arguments>
-<status status="PASS" starttime="20220411 22:00:48.710" endtime="20220411 22:01:08.499"></status>
+<status status="PASS" starttime="20220421 21:52:04.865" endtime="20220421 21:52:13.496"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>User logged in successfully</arg>
 </arguments>
-<status status="PASS" starttime="20220411 22:01:08.499" endtime="20220411 22:01:08.500"></status>
+<status status="PASS" starttime="20220421 21:52:13.497" endtime="20220421 21:52:13.498"></status>
 </kw>
-<status status="PASS" starttime="20220411 22:00:48.709" endtime="20220411 22:01:08.500"></status>
+<status status="PASS" starttime="20220421 21:52:04.864" endtime="20220421 21:52:13.498"></status>
 </kw>
-<status status="PASS" starttime="20220411 22:00:47.727" endtime="20220411 22:01:08.500"></status>
+<kw name="Teardown Properties" type="teardown">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20220421 21:52:18.513" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220421 21:52:13.500" endtime="20220421 21:52:18.514"></status>
 </kw>
+<status status="PASS" starttime="20220421 21:52:13.499" endtime="20220421 21:52:18.514"></status>
+</kw>
+<tags>
+<tag>login</tag>
+</tags>
+<status status="PASS" starttime="20220421 21:51:37.108" endtime="20220421 21:52:18.515" critical="yes"></status>
+</test>
+<test id="s1-t2" name="Companies - Add Companies">
+<kw name="Setup Properties" type="setup">
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <doc>Sets the delay that is waited after each Selenium command.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<status status="PASS" starttime="20220411 22:01:08.500" endtime="20220411 22:01:08.501"></status>
+<status status="PASS" starttime="20220421 21:52:18.602" endtime="20220421 21:52:18.603"></status>
 </kw>
 <kw name="Set Selenium Timeout" library="SeleniumLibrary">
 <doc>Sets the timeout that is used by various keywords.</doc>
 <arguments>
 <arg>60s</arg>
 </arguments>
-<status status="PASS" starttime="20220411 22:01:08.501" endtime="20220411 22:01:10.514"></status>
+<status status="PASS" starttime="20220421 21:52:18.603" endtime="20220421 21:52:20.613"></status>
 </kw>
-<status status="PASS" starttime="20220411 21:58:55.811" endtime="20220411 22:01:10.515"></status>
+<status status="PASS" starttime="20220421 21:52:18.600" endtime="20220421 21:52:20.614"></status>
 </kw>
-<test id="s1-t1" name="1.0 Filters: Verify panel scores">
-<kw name="Check Panel Scores" library="FiltersKeywords">
-<kw name="Scroll Element Into View" library="SeleniumLibrary">
-<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<kw name="Verify Add Company Details" library="CompaniesKeywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
 <arguments>
-<arg>${country_panel_scorecard}</arg>
+<arg>${add_companybtn}</arg>
 </arguments>
-<status status="PASS" starttime="20220411 22:01:10.522" endtime="20220411 22:01:19.067"></status>
-</kw>
-<kw name="Get Text" library="SeleniumLibrary">
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<arguments>
-<arg>${country_panel_scorecard}</arg>
-</arguments>
-<assign>
-<var>${country}</var>
-</assign>
-<msg timestamp="20220411 22:01:23.235" level="INFO">${country} = Country</msg>
-<status status="PASS" starttime="20220411 22:01:19.068" endtime="20220411 22:01:23.235"></status>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>contains ${country} section</arg>
-</arguments>
-<status status="PASS" starttime="20220411 22:01:23.235" endtime="20220411 22:01:23.235"></status>
+<msg timestamp="20220421 21:52:20.618" level="INFO">Clicking element 'xpath:/html/body/div/div/section/main/section/div/div[1]/div/button'.</msg>
+<status status="PASS" starttime="20220421 21:52:20.617" endtime="20220421 21:52:25.144"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
 <arguments>
-<arg>${retailer_panel_scorecard}</arg>
+<arg>${addcomp_name}</arg>
 <arg>15s</arg>
 </arguments>
-<status status="PASS" starttime="20220411 22:01:23.239" endtime="20220411 22:01:27.366"></status>
+<status status="PASS" starttime="20220421 21:52:25.145" endtime="20220421 21:52:33.561"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
-<arg>contains Retailer section</arg>
+<arg>Name field is present</arg>
 </arguments>
-<status status="PASS" starttime="20220411 22:01:27.367" endtime="20220411 22:01:27.368"></status>
+<status status="PASS" starttime="20220421 21:52:33.562" endtime="20220421 21:52:33.564"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
 <arguments>
-<arg>${prodgroup_panel_scorecard}</arg>
+<arg>${addcomp_isactive}</arg>
 <arg>15s</arg>
 </arguments>
-<status status="PASS" starttime="20220411 22:01:27.369" endtime="20220411 22:01:31.497"></status>
+<status status="PASS" starttime="20220421 21:52:33.564" endtime="20220421 21:52:37.668"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${addcomp_isactive}</arg>
+</arguments>
+<msg timestamp="20220421 21:52:37.669" level="INFO">Clicking element 'xpath:/html/body/div[1]/div/section/main/section/div/div[2]/div[2]/div/div[2]/form/div[2]/div/div/span'.</msg>
+<status status="PASS" starttime="20220421 21:52:37.668" endtime="20220421 21:52:41.884"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
-<arg>contains Product Group section</arg>
+<arg>Toggled inactive</arg>
 </arguments>
-<status status="PASS" starttime="20220411 22:01:31.497" endtime="20220411 22:01:31.497"></status>
+<status status="PASS" starttime="20220421 21:52:41.885" endtime="20220421 21:52:41.887"></status>
 </kw>
-<status status="PASS" starttime="20220411 22:01:10.519" endtime="20220411 22:01:31.501"></status>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${addcomp_isactive}</arg>
+</arguments>
+<msg timestamp="20220421 21:52:41.889" level="INFO">Clicking element 'xpath:/html/body/div[1]/div/section/main/section/div/div[2]/div[2]/div/div[2]/form/div[2]/div/div/span'.</msg>
+<status status="PASS" starttime="20220421 21:52:41.888" endtime="20220421 21:52:46.037"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Toggled active again</arg>
+</arguments>
+<status status="PASS" starttime="20220421 21:52:46.038" endtime="20220421 21:52:46.040"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${addcomp_tabs}</arg>
+<arg>15s</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220421 21:53:30.614" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220421 21:53:01.804" endtime="20220421 21:53:30.614"></status>
+</kw>
+<msg timestamp="20220421 21:53:30.997" level="FAIL">Element 'xpath:/html/body/div[1]/div/section/main/section/div/div[2]/div[2]/div/div[2]/form/div[3]/div[1]/div/div/div/div' not visible after 15 seconds.</msg>
+<status status="FAIL" starttime="20220421 21:52:46.040" endtime="20220421 21:53:30.997"></status>
+</kw>
+<status status="FAIL" starttime="20220421 21:52:20.616" endtime="20220421 21:53:30.998"></status>
+</kw>
+<kw name="Teardown Properties" type="teardown">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20220421 21:53:36.008" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220421 21:53:31.001" endtime="20220421 21:53:36.008"></status>
+</kw>
+<status status="PASS" starttime="20220421 21:53:31.000" endtime="20220421 21:53:36.009"></status>
 </kw>
 <tags>
-<tag>scores</tag>
+<tag>add</tag>
 </tags>
-<status status="PASS" starttime="20220411 22:01:10.515" endtime="20220411 22:01:31.502" critical="yes"></status>
+<status status="FAIL" starttime="20220421 21:52:18.598" endtime="20220421 21:53:36.010" critical="yes">Element 'xpath:/html/body/div[1]/div/section/main/section/div/div[2]/div[2]/div/div[2]/form/div[3]/div[1]/div/div/div/div' not visible after 15 seconds.</status>
 </test>
 <kw name="Close All Browsers" library="SeleniumLibrary" type="teardown">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20220411 22:01:31.509" endtime="20220411 22:01:35.773"></status>
+<status status="PASS" starttime="20220421 21:53:36.014" endtime="20220421 21:53:44.290"></status>
 </kw>
-<status status="PASS" starttime="20220411 21:58:55.341" endtime="20220411 22:01:35.773"></status>
+<status status="FAIL" starttime="20220421 21:49:42.578" endtime="20220421 21:53:44.290"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0">Critical Tests</stat>
-<stat pass="1" fail="0">All Tests</stat>
+<stat pass="1" fail="1">Critical Tests</stat>
+<stat pass="1" fail="1">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0">scores</stat>
+<stat pass="0" fail="1">add</stat>
+<stat pass="1" fail="0">login</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" id="s1" name="Filters">Filters</stat>
+<stat pass="1" fail="1" id="s1" name="Companies">Companies</stat>
 </suite>
 </statistics>
 <errors>

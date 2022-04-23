@@ -19,6 +19,9 @@ ${pass}     d3t@1l@dm1n
 1.0 Filters: Verify panel scores
     [Tags]  scores
     Check Panel Scores
+1.0 Filters: Verify filters panel
+    [Tags]  filters
+    Check Filters Panel
 *** Keywords ***
 Setup Properties
     Launch Browser      ${url}      ${browser}
