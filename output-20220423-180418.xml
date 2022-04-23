@@ -1,0 +1,1181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.8.0 on win32)" generated="20220423 18:04:18.922" rpa="false">
+<suite id="s1" name="Scorecard" source="C:\Users\Rica Datoc\PycharmProjects\Packages\Packages\Scorecard.robot">
+<kw name="Setup Properties" type="setup">
+<kw name="Launch Browser" library="LoginKeywords">
+<arguments>
+<arg>${url}</arg>
+<arg>headlesschrome</arg>
+</arguments>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Launching Browser...</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:04:19.529" endtime="20220423 18:04:19.529"></status>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${siteurl}</arg>
+<arg>${testbrowser}</arg>
+</arguments>
+<msg timestamp="20220423 18:04:19.531" level="INFO">Opening browser 'headlesschrome' to base url 'https://accounts.detailonline.com/'.</msg>
+<status status="PASS" starttime="20220423 18:04:19.529" endtime="20220423 18:04:52.018"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220423 18:04:52.018" endtime="20220423 18:04:52.720"></status>
+</kw>
+<status status="PASS" starttime="20220423 18:04:19.527" endtime="20220423 18:04:52.721"></status>
+</kw>
+<kw name="Login to App" library="ScorecardKeywords">
+<arguments>
+<arg>${user}</arg>
+<arg>${pass}</arg>
+</arguments>
+<kw name="Input Username" library="LoginKeywords">
+<arguments>
+<arg>${username}</arg>
+</arguments>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Inputting username...</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:04:52.724" endtime="20220423 18:04:52.725"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${field_username}</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20220423 18:04:52.727" level="INFO">Typing text 'razer-own@mailinator.com' into text field 'xpath:/html/body/div/div/section/section/section/div[1]/div/div/form/div[1]/div/div/input'.</msg>
+<status status="PASS" starttime="20220423 18:04:52.725" endtime="20220423 18:04:54.891"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Username:${username} inputted.</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:04:54.892" endtime="20220423 18:04:54.893"></status>
+</kw>
+<status status="PASS" starttime="20220423 18:04:52.723" endtime="20220423 18:04:54.893"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Username entered.</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:04:54.893" endtime="20220423 18:04:54.894"></status>
+</kw>
+<kw name="Input Password" library="LoginKeywords">
+<arguments>
+<arg>${password}</arg>
+</arguments>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Inputting password...</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:04:54.894" endtime="20220423 18:04:54.895"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${field_password}</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20220423 18:04:54.896" level="INFO">Typing text 'd3t@1l@dm1n' into text field 'xpath:/html/body/div/div/section/section/section/div[1]/div/div/form/div[2]/div/div[1]/input'.</msg>
+<status status="PASS" starttime="20220423 18:04:54.896" endtime="20220423 18:04:55.576"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Password Inputted.</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:04:55.576" endtime="20220423 18:04:55.577"></status>
+</kw>
+<status status="PASS" starttime="20220423 18:04:54.894" endtime="20220423 18:04:55.577"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Password entered.</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:04:55.578" endtime="20220423 18:04:55.578"></status>
+</kw>
+<kw name="Click Login" library="LoginKeywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_login}</arg>
+</arguments>
+<msg timestamp="20220423 18:04:55.579" level="INFO">Clicking element 'xpath:/html/body/div/div/section/section/section/div[1]/div/div/form/div[3]/div/button'.</msg>
+<status status="PASS" starttime="20220423 18:04:55.579" endtime="20220423 18:04:56.581"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Waiting to Login...</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:04:56.581" endtime="20220423 18:04:56.582"></status>
+</kw>
+<status status="PASS" starttime="20220423 18:04:55.579" endtime="20220423 18:04:56.583"></status>
+</kw>
+<kw name="Verify Login Success" library="LoginKeywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${scorecard}</arg>
+<arg>60s</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:04:56.583" endtime="20220423 18:05:09.520"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>User logged in successfully</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:05:09.521" endtime="20220423 18:05:09.521"></status>
+</kw>
+<status status="PASS" starttime="20220423 18:04:56.583" endtime="20220423 18:05:09.522"></status>
+</kw>
+<status status="PASS" starttime="20220423 18:04:52.721" endtime="20220423 18:05:09.522"></status>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:05:09.522" endtime="20220423 18:05:09.523"></status>
+</kw>
+<kw name="Set Selenium Timeout" library="SeleniumLibrary">
+<doc>Sets the timeout that is used by various keywords.</doc>
+<arguments>
+<arg>60s</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:05:09.523" endtime="20220423 18:05:11.539"></status>
+</kw>
+<status status="PASS" starttime="20220423 18:04:19.527" endtime="20220423 18:05:11.539"></status>
+</kw>
+<test id="s1-t1" name="Scorecard: Verify access to page">
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${scorecard}</arg>
+</arguments>
+<msg timestamp="20220423 18:05:15.605" level="INFO">Element 'xpath:/html/body/div[1]/div/section/section[1]/div[1]/div[1]/div' is displayed.</msg>
+<status status="PASS" starttime="20220423 18:05:11.541" endtime="20220423 18:05:15.605"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Score Card is accessed.</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:05:15.606" endtime="20220423 18:05:15.624"></status>
+</kw>
+<tags>
+<tag>start</tag>
+</tags>
+<status status="PASS" starttime="20220423 18:05:11.539" endtime="20220423 18:05:15.625" critical="yes"></status>
+</test>
+<test id="s1-t2" name="Scorecard: Verify contents on page">
+<kw name="Check Score Card Contents" library="ScorecardKeywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${date_navbar}</arg>
+<arg>10s</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:05:15.656" endtime="20220423 18:05:19.806"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>contains date picker nav bar</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:05:19.806" endtime="20220423 18:05:19.807"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${date_picker}</arg>
+<arg>10s</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:05:19.807" endtime="20220423 18:05:24.189"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>contains date picker button</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:05:24.189" endtime="20220423 18:05:24.191"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${overall_text}</arg>
+<arg>10s</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:05:24.191" endtime="20220423 18:05:28.326"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>contains Scorecard overall score</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:05:28.326" endtime="20220423 18:05:28.327"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${overall_display_text}</arg>
+<arg>10s</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:05:28.327" endtime="20220423 18:05:32.409"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>contains Display percentage</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:05:32.410" endtime="20220423 18:05:32.412"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${overall_inspire_text}</arg>
+<arg>10s</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:05:32.413" endtime="20220423 18:05:36.521"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>contains Inspire percentage</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:05:36.522" endtime="20220423 18:05:36.523"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${overall_convert_text}</arg>
+<arg>10s</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:05:36.524" endtime="20220423 18:05:40.756"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>contains Convert percentage</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:05:40.756" endtime="20220423 18:05:40.757"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${country_panel_scorecard}</arg>
+<arg>10s</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:05:40.757" endtime="20220423 18:05:44.853"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>contains Country section</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:05:44.854" endtime="20220423 18:05:44.856"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${retailer_panel_scorecard}</arg>
+<arg>10s</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:05:44.856" endtime="20220423 18:05:49.075"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>contains Retailer section</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:05:49.075" endtime="20220423 18:05:49.076"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${prodgroup_panel_scorecard}</arg>
+<arg>10s</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:05:49.077" endtime="20220423 18:05:53.285"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>contains Product Group section</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:05:53.286" endtime="20220423 18:05:53.287"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${country_filter}</arg>
+<arg>10s</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:05:53.288" endtime="20220423 18:05:57.406"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>contains Filters panel</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:05:57.407" endtime="20220423 18:05:57.407"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>contains Country filter in Filters</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:05:57.408" endtime="20220423 18:05:57.408"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${retailer_filter}</arg>
+<arg>10s</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:05:57.409" endtime="20220423 18:06:01.555"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>contains Retailers filter in Filters</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:06:01.556" endtime="20220423 18:06:01.558"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${brand_filter}</arg>
+<arg>10s</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:06:01.558" endtime="20220423 18:06:05.699"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>contains Brand filter in Filters</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:06:05.700" endtime="20220423 18:06:05.701"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${prodgroup_filter}</arg>
+<arg>10s</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:06:05.702" endtime="20220423 18:06:09.885"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>contains Product group filter in Filters</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:06:09.886" endtime="20220423 18:06:09.888"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${saved_panel}</arg>
+<arg>10s</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:06:09.889" endtime="20220423 18:06:14.121"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>contains Saved filters panel</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:06:14.122" endtime="20220423 18:06:14.122"></status>
+</kw>
+<status status="PASS" starttime="20220423 18:05:15.655" endtime="20220423 18:06:14.123"></status>
+</kw>
+<status status="PASS" starttime="20220423 18:05:15.654" endtime="20220423 18:06:14.124" critical="yes"></status>
+</test>
+<test id="s1-t3" name="Scorecard: Verify date picker if working properly">
+<kw name="Check calendar" library="ScorecardKeywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${date_picker}</arg>
+</arguments>
+<msg timestamp="20220423 18:06:14.130" level="INFO">Clicking element 'xpath:/html/body/div[1]/div/section/section[1]/div[1]/div[1]/div/div/div[2]/div[1]/div/div/div[2]/div/input'.</msg>
+<status status="PASS" starttime="20220423 18:06:14.130" endtime="20220423 18:06:21.028"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Calendar is Visible</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:06:21.029" endtime="20220423 18:06:21.030"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${date_picker}</arg>
+</arguments>
+<msg timestamp="20220423 18:06:21.031" level="INFO">Clicking element 'xpath:/html/body/div[1]/div/section/section[1]/div[1]/div[1]/div/div/div[2]/div[1]/div/div/div[2]/div/input'.</msg>
+<status status="PASS" starttime="20220423 18:06:21.030" endtime="20220423 18:06:25.117"></status>
+</kw>
+<status status="PASS" starttime="20220423 18:06:14.129" endtime="20220423 18:06:25.118"></status>
+</kw>
+<kw name="Check month slider" library="ScorecardKeywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${date_picker}</arg>
+</arguments>
+<msg timestamp="20220423 18:06:25.121" level="INFO">Clicking element 'xpath:/html/body/div[1]/div/section/section[1]/div[1]/div[1]/div/div/div[2]/div[1]/div/div/div[2]/div/input'.</msg>
+<status status="PASS" starttime="20220423 18:06:25.121" endtime="20220423 18:06:29.219"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${next_month_slider}</arg>
+<arg>60s</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:06:29.219" endtime="20220423 18:06:33.295"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${month_selection}</arg>
+</arguments>
+<assign>
+<var>${curr}</var>
+</assign>
+<msg timestamp="20220423 18:06:37.493" level="INFO">${curr} = April</msg>
+<status status="PASS" starttime="20220423 18:06:33.296" endtime="20220423 18:06:37.493"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Current Month: ${curr}</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:06:37.493" endtime="20220423 18:06:37.494"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${next_month_slider}</arg>
+</arguments>
+<msg timestamp="20220423 18:06:37.495" level="INFO">Clicking element 'xpath:/html/body/div[2]/div[1]/div/div[1]/button[4]'.</msg>
+<status status="PASS" starttime="20220423 18:06:37.495" endtime="20220423 18:06:41.962"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${month_selection}</arg>
+</arguments>
+<assign>
+<var>${next}</var>
+</assign>
+<msg timestamp="20220423 18:06:46.059" level="INFO">${next} = May</msg>
+<status status="PASS" starttime="20220423 18:06:41.962" endtime="20220423 18:06:46.059"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Next Month: ${next}</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:06:46.060" endtime="20220423 18:06:46.061"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${prev_month_slider}</arg>
+</arguments>
+<msg timestamp="20220423 18:06:46.061" level="INFO">Clicking element 'xpath:/html/body/div[2]/div[1]/div/div[1]/button[2]'.</msg>
+<status status="PASS" starttime="20220423 18:06:46.061" endtime="20220423 18:06:50.399"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${prev_month_slider}</arg>
+</arguments>
+<msg timestamp="20220423 18:06:50.400" level="INFO">Clicking element 'xpath:/html/body/div[2]/div[1]/div/div[1]/button[2]'.</msg>
+<status status="PASS" starttime="20220423 18:06:50.399" endtime="20220423 18:06:54.602"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${month_selection}</arg>
+</arguments>
+<assign>
+<var>${prev}</var>
+</assign>
+<msg timestamp="20220423 18:06:58.662" level="INFO">${prev} = March</msg>
+<status status="PASS" starttime="20220423 18:06:54.602" endtime="20220423 18:06:58.662"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Previous Month: ${prev}</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:06:58.663" endtime="20220423 18:06:58.682"></status>
+</kw>
+<status status="PASS" starttime="20220423 18:06:25.120" endtime="20220423 18:06:58.682"></status>
+</kw>
+<kw name="Check year slider" library="ScorecardKeywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${date_picker}</arg>
+</arguments>
+<msg timestamp="20220423 18:06:58.686" level="INFO">Clicking element 'xpath:/html/body/div[1]/div/section/section[1]/div[1]/div[1]/div/div/div[2]/div[1]/div/div/div[2]/div/input'.</msg>
+<status status="PASS" starttime="20220423 18:06:58.685" endtime="20220423 18:07:02.795"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${next_year_slider}</arg>
+<arg>60s</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:07:02.796" endtime="20220423 18:07:06.965"></status>
+</kw>
+<status status="PASS" starttime="20220423 18:06:58.684" endtime="20220423 18:07:06.965"></status>
+</kw>
+<tags>
+<tag>filter</tag>
+</tags>
+<status status="PASS" starttime="20220423 18:06:14.127" endtime="20220423 18:07:06.967" critical="yes"></status>
+</test>
+<test id="s1-t4" name="Scorecard: Verify Overall % calculation">
+<kw name="Verify Overall Score" library="ScorecardKeywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${overall_text}</arg>
+<arg>60s</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:07:06.973" endtime="20220423 18:07:11.033"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${overall_text}</arg>
+</arguments>
+<assign>
+<var>${overall_score}</var>
+</assign>
+<msg timestamp="20220423 18:07:15.127" level="INFO">${overall_score} = 53.98
+%</msg>
+<status status="PASS" starttime="20220423 18:07:11.034" endtime="20220423 18:07:15.127"></status>
+</kw>
+<kw name="Remove String" library="String">
+<doc>Removes all ``removables`` from the given ``string``.</doc>
+<arguments>
+<arg>${overall_score}</arg>
+<arg>%</arg>
+</arguments>
+<assign>
+<var>${overall_score}</var>
+</assign>
+<msg timestamp="20220423 18:07:15.128" level="INFO">${overall_score} = 53.98
+</msg>
+<status status="PASS" starttime="20220423 18:07:15.128" endtime="20220423 18:07:15.128"></status>
+</kw>
+<kw name="Convert To Number" library="BuiltIn">
+<doc>Converts the given item to a floating point number.</doc>
+<arguments>
+<arg>${overall_score}</arg>
+</arguments>
+<assign>
+<var>${overall_score}</var>
+</assign>
+<msg timestamp="20220423 18:07:15.129" level="INFO">${overall_score} = 53.98</msg>
+<status status="PASS" starttime="20220423 18:07:15.128" endtime="20220423 18:07:15.129"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Overall score = ${overall_score}</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:07:15.129" endtime="20220423 18:07:15.155"></status>
+</kw>
+<kw name="Compute Percentage per module" library="ScorecardKeywords">
+<arguments>
+<arg>${overall_display_text}</arg>
+<arg>0.30</arg>
+</arguments>
+<assign>
+<var>${display}</var>
+</assign>
+<kw name="Get Score" library="ScorecardKeywords">
+<arguments>
+<arg>${module_xpath}</arg>
+</arguments>
+<assign>
+<var>${module_score}</var>
+</assign>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${module_xpath}</arg>
+</arguments>
+<assign>
+<var>${module_score}</var>
+</assign>
+<msg timestamp="20220423 18:07:19.275" level="INFO">${module_score} = 23.93</msg>
+<status status="PASS" starttime="20220423 18:07:15.157" endtime="20220423 18:07:19.275"></status>
+</kw>
+<kw name="Convert To Number" library="BuiltIn">
+<doc>Converts the given item to a floating point number.</doc>
+<arguments>
+<arg>${module_score}</arg>
+</arguments>
+<assign>
+<var>${module_score}</var>
+</assign>
+<msg timestamp="20220423 18:07:19.276" level="INFO">${module_score} = 23.93</msg>
+<status status="PASS" starttime="20220423 18:07:19.275" endtime="20220423 18:07:19.276"></status>
+</kw>
+<msg timestamp="20220423 18:07:19.277" level="INFO">${module_score} = 23.93</msg>
+<status status="PASS" starttime="20220423 18:07:15.156" endtime="20220423 18:07:19.277"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Overall Module score = ${module_score}</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:07:19.277" endtime="20220423 18:07:19.278"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<arguments>
+<arg>${module_score} * ${percent}</arg>
+</arguments>
+<assign>
+<var>${module_percentage}</var>
+</assign>
+<msg timestamp="20220423 18:07:19.279" level="INFO">${module_percentage} = 7.178999999999999</msg>
+<status status="PASS" starttime="20220423 18:07:19.278" endtime="20220423 18:07:19.279"></status>
+</kw>
+<msg timestamp="20220423 18:07:19.279" level="INFO">${display} = 7.178999999999999</msg>
+<status status="PASS" starttime="20220423 18:07:15.155" endtime="20220423 18:07:19.279"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Display Percentage: ${display}</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:07:19.279" endtime="20220423 18:07:19.280"></status>
+</kw>
+<kw name="Compute Percentage per module" library="ScorecardKeywords">
+<arguments>
+<arg>${overall_inspire_text}</arg>
+<arg>0.30</arg>
+</arguments>
+<assign>
+<var>${inspire}</var>
+</assign>
+<kw name="Get Score" library="ScorecardKeywords">
+<arguments>
+<arg>${module_xpath}</arg>
+</arguments>
+<assign>
+<var>${module_score}</var>
+</assign>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${module_xpath}</arg>
+</arguments>
+<assign>
+<var>${module_score}</var>
+</assign>
+<msg timestamp="20220423 18:07:23.493" level="INFO">${module_score} = 55.29</msg>
+<status status="PASS" starttime="20220423 18:07:19.282" endtime="20220423 18:07:23.493"></status>
+</kw>
+<kw name="Convert To Number" library="BuiltIn">
+<doc>Converts the given item to a floating point number.</doc>
+<arguments>
+<arg>${module_score}</arg>
+</arguments>
+<assign>
+<var>${module_score}</var>
+</assign>
+<msg timestamp="20220423 18:07:23.494" level="INFO">${module_score} = 55.29</msg>
+<status status="PASS" starttime="20220423 18:07:23.494" endtime="20220423 18:07:23.495"></status>
+</kw>
+<msg timestamp="20220423 18:07:23.495" level="INFO">${module_score} = 55.29</msg>
+<status status="PASS" starttime="20220423 18:07:19.281" endtime="20220423 18:07:23.495"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Overall Module score = ${module_score}</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:07:23.496" endtime="20220423 18:07:23.497"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<arguments>
+<arg>${module_score} * ${percent}</arg>
+</arguments>
+<assign>
+<var>${module_percentage}</var>
+</assign>
+<msg timestamp="20220423 18:07:23.498" level="INFO">${module_percentage} = 16.587</msg>
+<status status="PASS" starttime="20220423 18:07:23.497" endtime="20220423 18:07:23.498"></status>
+</kw>
+<msg timestamp="20220423 18:07:23.499" level="INFO">${inspire} = 16.587</msg>
+<status status="PASS" starttime="20220423 18:07:19.280" endtime="20220423 18:07:23.499"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Inspire Percentage: ${inspire}</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:07:23.499" endtime="20220423 18:07:23.500"></status>
+</kw>
+<kw name="Compute Percentage per module" library="ScorecardKeywords">
+<arguments>
+<arg>${overall_convert_text}</arg>
+<arg>0.40</arg>
+</arguments>
+<assign>
+<var>${convert}</var>
+</assign>
+<kw name="Get Score" library="ScorecardKeywords">
+<arguments>
+<arg>${module_xpath}</arg>
+</arguments>
+<assign>
+<var>${module_score}</var>
+</assign>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${module_xpath}</arg>
+</arguments>
+<assign>
+<var>${module_score}</var>
+</assign>
+<msg timestamp="20220423 18:07:27.564" level="INFO">${module_score} = 75.54</msg>
+<status status="PASS" starttime="20220423 18:07:23.502" endtime="20220423 18:07:27.564"></status>
+</kw>
+<kw name="Convert To Number" library="BuiltIn">
+<doc>Converts the given item to a floating point number.</doc>
+<arguments>
+<arg>${module_score}</arg>
+</arguments>
+<assign>
+<var>${module_score}</var>
+</assign>
+<msg timestamp="20220423 18:07:27.566" level="INFO">${module_score} = 75.54</msg>
+<status status="PASS" starttime="20220423 18:07:27.565" endtime="20220423 18:07:27.567"></status>
+</kw>
+<msg timestamp="20220423 18:07:27.567" level="INFO">${module_score} = 75.54</msg>
+<status status="PASS" starttime="20220423 18:07:23.501" endtime="20220423 18:07:27.567"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Overall Module score = ${module_score}</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:07:27.568" endtime="20220423 18:07:27.569"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<arguments>
+<arg>${module_score} * ${percent}</arg>
+</arguments>
+<assign>
+<var>${module_percentage}</var>
+</assign>
+<msg timestamp="20220423 18:07:27.570" level="INFO">${module_percentage} = 30.216000000000005</msg>
+<status status="PASS" starttime="20220423 18:07:27.569" endtime="20220423 18:07:27.570"></status>
+</kw>
+<msg timestamp="20220423 18:07:27.571" level="INFO">${convert} = 30.216000000000005</msg>
+<status status="PASS" starttime="20220423 18:07:23.500" endtime="20220423 18:07:27.572"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Convert Percentage: ${convert}</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:07:27.572" endtime="20220423 18:07:27.573"></status>
+</kw>
+<kw name="Compute Overall Score" library="ScorecardKeywords">
+<arguments>
+<arg>${display}</arg>
+<arg>${inspire}</arg>
+<arg>${convert}</arg>
+</arguments>
+<assign>
+<var>${overall}</var>
+</assign>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<arguments>
+<arg>${display} + ${inspire}</arg>
+</arguments>
+<assign>
+<var>${temp}</var>
+</assign>
+<msg timestamp="20220423 18:07:27.577" level="INFO">${temp} = 23.766</msg>
+<status status="PASS" starttime="20220423 18:07:27.576" endtime="20220423 18:07:27.577"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<arguments>
+<arg>${temp} + ${convert}</arg>
+</arguments>
+<assign>
+<var>${result}</var>
+</assign>
+<msg timestamp="20220423 18:07:27.579" level="INFO">${result} = 53.982</msg>
+<status status="PASS" starttime="20220423 18:07:27.577" endtime="20220423 18:07:27.579"></status>
+</kw>
+<msg timestamp="20220423 18:07:27.580" level="INFO">${overall} = 53.982</msg>
+<status status="PASS" starttime="20220423 18:07:27.574" endtime="20220423 18:07:27.580"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Computed Overall Score: ${overall}</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:07:27.580" endtime="20220423 18:07:27.581"></status>
+</kw>
+<kw name="Should Be Equal As Numbers" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<arguments>
+<arg>${overall}</arg>
+<arg>${overall_score}</arg>
+<arg>precision=2</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:07:27.582" endtime="20220423 18:07:27.583"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Overall score is verified!</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:07:27.584" endtime="20220423 18:07:27.584"></status>
+</kw>
+<status status="PASS" starttime="20220423 18:07:06.972" endtime="20220423 18:07:27.585"></status>
+</kw>
+<tags>
+<tag>compute</tag>
+</tags>
+<status status="PASS" starttime="20220423 18:07:06.970" endtime="20220423 18:07:27.586" critical="yes"></status>
+</test>
+<test id="s1-t5" name="Scorecard: Verify Display Overall calculation">
+<kw name="Verify Display Pillar Score" library="ScorecardKeywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${display_pillar}</arg>
+</arguments>
+<msg timestamp="20220423 18:07:27.591" level="INFO">Clicking element 'xpath:/html/body/div[1]/div/section/section[1]/div[1]/div[1]/div/div/div[2]/div[2]/a[1]/div/div/section/div'.</msg>
+<status status="PASS" starttime="20220423 18:07:27.590" endtime="20220423 18:07:31.950"></status>
+</kw>
+<kw name="Get Score" library="ScorecardKeywords">
+<arguments>
+<arg>${overall_display_text}</arg>
+</arguments>
+<assign>
+<var>${display_score}</var>
+</assign>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${module_xpath}</arg>
+</arguments>
+<assign>
+<var>${module_score}</var>
+</assign>
+<msg timestamp="20220423 18:07:36.168" level="INFO">${module_score} = 23.93</msg>
+<status status="PASS" starttime="20220423 18:07:31.952" endtime="20220423 18:07:36.168"></status>
+</kw>
+<kw name="Convert To Number" library="BuiltIn">
+<doc>Converts the given item to a floating point number.</doc>
+<arguments>
+<arg>${module_score}</arg>
+</arguments>
+<assign>
+<var>${module_score}</var>
+</assign>
+<msg timestamp="20220423 18:07:36.171" level="INFO">${module_score} = 23.93</msg>
+<status status="PASS" starttime="20220423 18:07:36.169" endtime="20220423 18:07:36.171"></status>
+</kw>
+<msg timestamp="20220423 18:07:36.172" level="INFO">${display_score} = 23.93</msg>
+<status status="PASS" starttime="20220423 18:07:31.951" endtime="20220423 18:07:36.172"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>DISPLAY SCORE from Scorecard: ${display_score}</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:07:36.172" endtime="20220423 18:07:36.174"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${display_tab}</arg>
+</arguments>
+<msg timestamp="20220423 18:07:36.175" level="INFO">Clicking link 'xpath:/html/body/div/div/section/section[2]/div[1]/div[1]/a[3]'.</msg>
+<status status="PASS" starttime="20220423 18:07:36.174" endtime="20220423 18:07:42.565"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Accessing Display Modules...</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:07:42.565" endtime="20220423 18:07:42.567"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${sos_rankings}</arg>
+<arg>60s</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:07:42.567" endtime="20220423 18:07:51.141"></status>
+</kw>
+<kw name="Get Score" library="ScorecardKeywords">
+<arguments>
+<arg>${overall_display_text}</arg>
+</arguments>
+<assign>
+<var>${searchwords_score}</var>
+</assign>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${module_xpath}</arg>
+</arguments>
+<assign>
+<var>${module_score}</var>
+</assign>
+<msg timestamp="20220423 18:07:55.490" level="INFO">${module_score} = 5.84</msg>
+<status status="PASS" starttime="20220423 18:07:51.144" endtime="20220423 18:07:55.490"></status>
+</kw>
+<kw name="Convert To Number" library="BuiltIn">
+<doc>Converts the given item to a floating point number.</doc>
+<arguments>
+<arg>${module_score}</arg>
+</arguments>
+<assign>
+<var>${module_score}</var>
+</assign>
+<msg timestamp="20220423 18:07:55.492" level="INFO">${module_score} = 5.84</msg>
+<status status="PASS" starttime="20220423 18:07:55.491" endtime="20220423 18:07:55.492"></status>
+</kw>
+<msg timestamp="20220423 18:07:55.493" level="INFO">${searchwords_score} = 5.84</msg>
+<status status="PASS" starttime="20220423 18:07:51.142" endtime="20220423 18:07:55.493"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<arguments>
+<arg>${searchwords_score} * 0.30</arg>
+</arguments>
+<assign>
+<var>${searchwords}</var>
+</assign>
+<msg timestamp="20220423 18:07:55.495" level="INFO">${searchwords} = 1.752</msg>
+<status status="PASS" starttime="20220423 18:07:55.495" endtime="20220423 18:07:55.495"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Search Words SCORE: ${searchwords_score}</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:07:55.495" endtime="20220423 18:07:55.496"></status>
+</kw>
+<kw name="Get Score" library="ScorecardKeywords">
+<arguments>
+<arg>${overall_inspire_text}</arg>
+</arguments>
+<assign>
+<var>${visibility_score}</var>
+</assign>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${module_xpath}</arg>
+</arguments>
+<assign>
+<var>${module_score}</var>
+</assign>
+<msg timestamp="20220423 18:07:59.607" level="INFO">${module_score} = 48.63</msg>
+<status status="PASS" starttime="20220423 18:07:55.496" endtime="20220423 18:07:59.607"></status>
+</kw>
+<kw name="Convert To Number" library="BuiltIn">
+<doc>Converts the given item to a floating point number.</doc>
+<arguments>
+<arg>${module_score}</arg>
+</arguments>
+<assign>
+<var>${module_score}</var>
+</assign>
+<msg timestamp="20220423 18:07:59.608" level="INFO">${module_score} = 48.63</msg>
+<status status="PASS" starttime="20220423 18:07:59.608" endtime="20220423 18:07:59.609"></status>
+</kw>
+<msg timestamp="20220423 18:07:59.609" level="INFO">${visibility_score} = 48.63</msg>
+<status status="PASS" starttime="20220423 18:07:55.496" endtime="20220423 18:07:59.609"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<arguments>
+<arg>${visibility_score} * 0.40</arg>
+</arguments>
+<assign>
+<var>${visibility}</var>
+</assign>
+<msg timestamp="20220423 18:07:59.610" level="INFO">${visibility} = 19.452</msg>
+<status status="PASS" starttime="20220423 18:07:59.609" endtime="20220423 18:07:59.610"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Visibility SCORE: ${visibility_score}</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:07:59.610" endtime="20220423 18:07:59.611"></status>
+</kw>
+<kw name="Get Score" library="ScorecardKeywords">
+<arguments>
+<arg>${overall_convert_text}</arg>
+</arguments>
+<assign>
+<var>${categories_score}</var>
+</assign>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${module_xpath}</arg>
+</arguments>
+<assign>
+<var>${module_score}</var>
+</assign>
+<msg timestamp="20220423 18:08:03.711" level="INFO">${module_score} = 9.08</msg>
+<status status="PASS" starttime="20220423 18:07:59.612" endtime="20220423 18:08:03.711"></status>
+</kw>
+<kw name="Convert To Number" library="BuiltIn">
+<doc>Converts the given item to a floating point number.</doc>
+<arguments>
+<arg>${module_score}</arg>
+</arguments>
+<assign>
+<var>${module_score}</var>
+</assign>
+<msg timestamp="20220423 18:08:03.712" level="INFO">${module_score} = 9.08</msg>
+<status status="PASS" starttime="20220423 18:08:03.711" endtime="20220423 18:08:03.712"></status>
+</kw>
+<msg timestamp="20220423 18:08:03.712" level="INFO">${categories_score} = 9.08</msg>
+<status status="PASS" starttime="20220423 18:07:59.611" endtime="20220423 18:08:03.713"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<arguments>
+<arg>${categories_score} * 0.30</arg>
+</arguments>
+<assign>
+<var>${categories}</var>
+</assign>
+<msg timestamp="20220423 18:08:03.713" level="INFO">${categories} = 2.7239999999999998</msg>
+<status status="PASS" starttime="20220423 18:08:03.713" endtime="20220423 18:08:03.714"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Categories SCORE: ${categories_score}</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:08:03.714" endtime="20220423 18:08:03.715"></status>
+</kw>
+<kw name="Compute Overall Score" library="ScorecardKeywords">
+<arguments>
+<arg>${searchwords}</arg>
+<arg>${visibility}</arg>
+<arg>${categories}</arg>
+</arguments>
+<assign>
+<var>${overall}</var>
+</assign>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<arguments>
+<arg>${display} + ${inspire}</arg>
+</arguments>
+<assign>
+<var>${temp}</var>
+</assign>
+<msg timestamp="20220423 18:08:03.716" level="INFO">${temp} = 21.204</msg>
+<status status="PASS" starttime="20220423 18:08:03.716" endtime="20220423 18:08:03.716"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<arguments>
+<arg>${temp} + ${convert}</arg>
+</arguments>
+<assign>
+<var>${result}</var>
+</assign>
+<msg timestamp="20220423 18:08:03.717" level="INFO">${result} = 23.928</msg>
+<status status="PASS" starttime="20220423 18:08:03.717" endtime="20220423 18:08:03.717"></status>
+</kw>
+<msg timestamp="20220423 18:08:03.718" level="INFO">${overall} = 23.928</msg>
+<status status="PASS" starttime="20220423 18:08:03.715" endtime="20220423 18:08:03.718"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Computed Overall Display Score: ${overall}</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:08:03.718" endtime="20220423 18:08:03.718"></status>
+</kw>
+<kw name="Should Be Equal As Numbers" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<arguments>
+<arg>${overall}</arg>
+<arg>${display_score}</arg>
+<arg>precision=2</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:08:03.719" endtime="20220423 18:08:03.719"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Display score is verified!</arg>
+</arguments>
+<status status="PASS" starttime="20220423 18:08:03.720" endtime="20220423 18:08:03.720"></status>
+</kw>
+<status status="PASS" starttime="20220423 18:07:27.590" endtime="20220423 18:08:03.720"></status>
+</kw>
+<status status="PASS" starttime="20220423 18:07:27.588" endtime="20220423 18:08:03.721" critical="yes"></status>
+</test>
+<kw name="Close All Browsers" library="SeleniumLibrary" type="teardown">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220423 18:08:03.725" endtime="20220423 18:08:07.953"></status>
+</kw>
+<status status="PASS" starttime="20220423 18:04:18.926" endtime="20220423 18:08:07.954"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0">Critical Tests</stat>
+<stat pass="5" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0">compute</stat>
+<stat pass="1" fail="0">filter</stat>
+<stat pass="1" fail="0">start</stat>
+</tag>
+<suite>
+<stat pass="5" fail="0" id="s1" name="Scorecard">Scorecard</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -34,13 +34,15 @@ logout_dashboard = "xpath:/html/body/ul/li"
 razer_btn = "xpath:/html/body/div/div/section/section[1]/div/div[2]/div/div[3]/table/tbody/tr[3]/td[4]/div/button"
 
 # Navbar elements
-inspire_tab = "xpath:/html/body/div[1]/div/section/section[2]/div[1]/div[1]/a[4]"
-convert_tab = "xpath:/html/body/div[1]/div/section/section[2]/div[1]/div[1]/a[5]"
+display_tab = "xpath:/html/body/div/div/section/section[2]/div[1]/div[1]/a[3]"
+inspire_tab = "xpath:/html/body/div/div/section/section[2]/div[1]/div[1]/a[4]"
+convert_tab = "xpath:/html/body/div/div/section/section[2]/div[1]/div[1]/a[5]"
 
 # Filter elements
 country_filter = "xpath:/html/body/div[1]/div/section/section[1]/div[2]/section/div[1]/div/div/div[2]/div[1]/form[1]/div[1]/div/div/div/input"
-retailer_filter = "xpath:/html/body/div[1]/div/section/section[1]/div[2]/section/div[1]/div/div/div[2]/div[1]/form[1]/div[2]/div/div/div[1]/input"
+retailer_filter = "xpath:/html/body/div[1]/div/section/section[1]/div[2]/section/div[1]/div/div/div[2]/div[1]/form[1]/div[2]/div/div/div/input"
 brand_filter = "xpath:/html/body/div[1]/div/section/section[1]/div[2]/section/div[1]/div/div/div[2]/div[1]/form[1]/div[3]/div/div/div/input"
+prodgroup_filter = "xpath:/html/body/div[1]/div/section/section[1]/div[2]/section/div[1]/div/div/div[2]/div[1]/form[1]/div[4]/div/div/div/input"
 
 #Score Card elements
 scorecard = "xpath:/html/body/div[1]/div/section/section[1]/div[1]/div[1]/div"
@@ -52,10 +54,14 @@ overall_variance_text = "xpath:/html/body/div[1]/div/section/section[1]/div[1]/d
 display_variance_text = "xpath:/html/body/div[1]/div/section/section[1]/div[1]/div[1]/div/div/div[2]/div[2]/a[1]/div/div/div[2]/span"
 inspire_variance_text = "xpath:/html/body/div[1]/div/section/section[1]/div[1]/div[1]/div/div/div[2]/div[2]/a[2]/div/div/div[2]/span"
 convert_variance_text = "xpath:/html/body/div[1]/div/section/section[1]/div[1]/div[1]/div/div/div[2]/div[2]/a[3]/div/div/div[2]/span"
-display_pillar = "xpath:/html/body/div[1]/div/section/section[1]/div[1]/div[1]/div/div/div[2]/div[2]/a[1]/div/div/section/div"
 inspire_pillar = "xpath:/html/body/div[1]/div/section/section[1]/div[1]/div[1]/div/div/div[2]/div[2]/a[2]/div/div/section/div"
 convert_pillar = "xpath:/html/body/div[1]/div/section/section[1]/div[1]/div[1]/div/div/div[2]/div[2]/a[3]/div/div/section/div"
 
+display_pillar = "xpath:/html/body/div[1]/div/section/section[1]/div[1]/div[1]/div/div/div[2]/div[2]/a[1]/div/div/section/div"
+searchwords_pillar = "xpath:/html/body/div/div/section/section[1]/div[1]/div[1]/div/div[1]/div[2]/div[2]/a[1]/div/div/section/div/div/div"
+visibility_pillar = "xpath:/html/body/div/div/section/section[1]/div[1]/div[1]/div/div[1]/div[2]/div[2]/a[2]/div/div/section/div/div/div/span[1]"
+categories_pillar = "xpath:/html/body/div/div/section/section[1]/div[1]/div[1]/div/div[1]/div[2]/div[2]/a[3]/div/div/section/div/div/div/span[1]"
+sos_rankings = "xpath:/html/body/div/div/section/section[1]/div[1]/div[1]/div/div[2]/div[2]/div[2]"
 display_catbar = "xpath:/html/body/div[1]/div/section/section[1]/div[1]/div[1]/div/section/div[2]/div[3]/div[2]/div[1]/div"
 
 
@@ -86,23 +92,19 @@ retailer_panel_scorecard = "xpath:/html/body/div[1]/div/section/section[1]/div[1
 prodgroup_panel_scorecard = "xpath:/html/body/div[1]/div/section/section[1]/div[1]/div[1]/div/section/div[2]/div[3]/div[1]"
 
 # Filter elements
-country_filter = "xpath:/html/body/div[1]/div/section/section[1]/div[2]/section/div[1]/div[2]/form[1]/div[1]/div/div/div/input"
-retailer_filter = "xpath:/html/body/div[1]/div/section/section[1]/div[2]/section/div[1]/div[2]/form[1]/div[2]/div/div/div[1]/input"
-brand_filter = "xpath:/html/body/div[1]/div/section/section[1]/div[2]/section/div[1]/div[2]/form[1]/div[3]/div/div/div[1]/input"
-cat_filter = "xpath:/html/body/div[1]/div/section/section[1]/div[2]/section/div[1]/div[2]/form[1]/div[4]/div/div/div[1]/input"
 save_btn = "xpath:/html/body/div[1]/div/section/section[1]/div[2]/section/div[1]/div[2]/form[2]/div[2]/div/div/div/span/button"
-reset_btn = "xpath:/html/body/div[1]/div/section/section[1]/div[2]/section/div[1]/div[2]/form[2]/div[2]/div/div/button[1]"
-apply_btn = "xpath:/html/body/div[1]/div/section/section[1]/div[2]/section/div[1]/div[2]/form[2]/div[2]/div/div/button[2]"
-saved_panel = "xpath:/html/body/div[1]/div/section/section[1]/div[2]/section/div[2]"
+reset_btn = "xpath:/html/body/div[1]/div/section/section[1]/div[2]/section/div[1]/div/div/div[2]/div[1]/form[2]/div/div/div/button[1]"
+apply_btn = "xpath:/html/body/div[1]/div/section/section[1]/div[2]/section/div[1]/div/div/div[2]/div[1]/form[2]/div/div/div/button[2]"
+saved_panel = "xpath:/html/body/div[1]/div/section/section[1]/div[2]/section/div[2]/div[2]"
 
 # Inspire elements
 content_pillar = "xpath:/html/body/div[1]/div/section/section[1]/div[1]/div[1]/div/div[1]/div[2]/div[2]/a[1]/div/div/section/div/div/div/span[1]"
 ratings_pillar = "xpath:/html/body/div[1]/div/section/section[1]/div[1]/div[1]/div/div[1]/div[2]/div[2]/a[2]/div/div/section/div/div/div/span[1]"
+content_table = "xpath:/html/body/div/div/section/section[1]/div[1]/div[1]/div/div[2]/div[2]/div[2]/div[2]/div[2]"
 
 # Convert elements
 instock_pillar = "xpath:/html/body/div[1]/div/section/section[1]/div[1]/div[1]/div/div[1]/div[2]/div[2]/a[1]/div/div/section/div/div/div/span[1]"
 
-# robot --timestampoutputs --log log.html --report NONE
 
 ### CMS Variables ###
 #Login
@@ -117,3 +119,5 @@ addcomp_close = "xpath:/html/body/div[1]/div/section/main/section/div/div[2]/div
 addcomp_isactive = "xpath:/html/body/div[1]/div/section/main/section/div/div[2]/div[2]/div/div[2]/form/div[2]/div/div/span"
 addcomp_name = "xpath:/html/body/div[1]/div/section/main/section/div/div[2]/div[2]/div/div[2]/form/div[1]/div/div/input"
 addcomp_tabs = "xpath:/html/body/div[1]/div/section/main/section/div/div[2]/div[2]/div/div[2]/form/div[3]/div[1]/div/div/div/div"
+
+# robot --timestampoutputs --log log.html --report NONE
