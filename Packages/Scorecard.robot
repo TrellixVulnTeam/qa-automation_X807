@@ -24,13 +24,19 @@ Scorecard: Verify date picker if working properly
     Check calendar
     Check month slider
     Check year slider
-Scorecard: Verify Overall % calculation
-    [Tags]  compute
-    Verify Overall Score
-#    Verify Inspire Pillar Score
-#    Verify Convert Pillar Score
 Scorecard: Verify Display Overall calculation
+    [Tags]  display
     Verify Display Pillar Score
+Scorecard: Verify Inspire Overall calculation
+    [Tags]  inspire
+    Verify Inspire Pillar Score
+Scorecard: Verify Convert Overall calculation
+    [Tags]  convert
+    Verify Convert Pillar Score
+Scorecard: Verify Overall % calculation
+    [Tags]  overall
+    Verify Overall Score
+
 
 #1.0 Scorecard: Verify Scorecard variance % calculation
 #    [Tags]  variance
@@ -38,7 +44,7 @@ Scorecard: Verify Display Overall calculation
 
 *** Keywords ***
 Setup Properties
-    Launch Browser      ${url}      headlesschrome      #${browser}
+    Launch Browser      ${url}      headlesschrome      #${browser}      #
     Login to App        ${user}     ${pass}
     Set Selenium Speed  2s
     Set Selenium Timeout  60s

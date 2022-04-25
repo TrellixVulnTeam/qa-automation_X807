@@ -34,6 +34,8 @@ logout_dashboard = "xpath:/html/body/ul/li"
 razer_btn = "xpath:/html/body/div/div/section/section[1]/div/div[2]/div/div[3]/table/tbody/tr[3]/td[4]/div/button"
 
 # Navbar elements
+scorecard_tab = "xpath:/html/body/div/div/section/section[2]/div[1]/div[1]/a[1]"
+dashboard_tab = "xpath:/html/body/div/div/section/section[2]/div[1]/div[1]/a[2]"
 display_tab = "xpath:/html/body/div/div/section/section[2]/div[1]/div[1]/a[3]"
 inspire_tab = "xpath:/html/body/div/div/section/section[2]/div[1]/div[1]/a[4]"
 convert_tab = "xpath:/html/body/div/div/section/section[2]/div[1]/div[1]/a[5]"
@@ -103,8 +105,7 @@ ratings_pillar = "xpath:/html/body/div[1]/div/section/section[1]/div[1]/div[1]/d
 content_table = "xpath:/html/body/div/div/section/section[1]/div[1]/div[1]/div/div[2]/div[2]/div[2]/div[2]/div[2]"
 
 # Convert elements
-instock_pillar = "xpath:/html/body/div[1]/div/section/section[1]/div[1]/div[1]/div/div[1]/div[2]/div[2]/a[1]/div/div/section/div/div/div/span[1]"
-
+convert_table = "xpath:/html/body/div/div/section/section[1]/div[1]/div[1]/div/div[2]/div[2]/div[2]/div[2]"
 
 ### CMS Variables ###
 #Login

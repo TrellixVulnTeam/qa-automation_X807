@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.1 (Python 3.8.0 on win32)" generated="20220425 22:18:37.202" rpa="false">
+<robot generator="Robot 3.2.1 (Python 3.8.0 on win32)" generated="20220425 22:34:09.962" rpa="false">
 <suite id="s1" name="Scorecard" source="C:\Users\Rica Datoc\PycharmProjects\Packages\Packages\Scorecard.robot">
 <kw name="Setup Properties" type="setup">
 <kw name="Launch Browser" library="LoginKeywords">
 <arguments>
 <arg>${url}</arg>
-<arg>${browser}</arg>
+<arg>headlesschrome</arg>
 </arguments>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>Launching Browser...</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:18:41.845" endtime="20220425 22:18:41.846"></status>
+<status status="PASS" starttime="20220425 22:34:10.614" endtime="20220425 22:34:10.615"></status>
 </kw>
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the optional ``url``.</doc>
@@ -20,14 +20,14 @@
 <arg>${siteurl}</arg>
 <arg>${testbrowser}</arg>
 </arguments>
-<msg timestamp="20220425 22:18:41.847" level="INFO">Opening browser 'chrome' to base url 'https://accounts.detailonline.com/'.</msg>
-<status status="PASS" starttime="20220425 22:18:41.846" endtime="20220425 22:19:05.125"></status>
+<msg timestamp="20220425 22:34:10.616" level="INFO">Opening browser 'headlesschrome' to base url 'https://accounts.detailonline.com/'.</msg>
+<status status="PASS" starttime="20220425 22:34:10.615" endtime="20220425 22:34:33.761"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220425 22:19:05.125" endtime="20220425 22:19:05.710"></status>
+<status status="PASS" starttime="20220425 22:34:33.762" endtime="20220425 22:34:33.896"></status>
 </kw>
-<status status="PASS" starttime="20220425 22:18:41.843" endtime="20220425 22:19:05.711"></status>
+<status status="PASS" starttime="20220425 22:34:10.613" endtime="20220425 22:34:33.896"></status>
 </kw>
 <kw name="Login to App" library="ScorecardKeywords">
 <arguments>
@@ -43,7 +43,7 @@
 <arguments>
 <arg>Inputting username...</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:19:05.714" endtime="20220425 22:19:05.715"></status>
+<status status="PASS" starttime="20220425 22:34:33.898" endtime="20220425 22:34:33.899"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -51,24 +51,24 @@
 <arg>${field_username}</arg>
 <arg>${username}</arg>
 </arguments>
-<msg timestamp="20220425 22:19:05.716" level="INFO">Typing text 'razer-own@mailinator.com' into text field 'xpath:/html/body/div/div/section/section/section/div[1]/div/div/form/div[1]/div/div/input'.</msg>
-<status status="PASS" starttime="20220425 22:19:05.715" endtime="20220425 22:19:08.036"></status>
+<msg timestamp="20220425 22:34:33.900" level="INFO">Typing text 'razer-own@mailinator.com' into text field 'xpath:/html/body/div/div/section/section/section/div[1]/div/div/form/div[1]/div/div/input'.</msg>
+<status status="PASS" starttime="20220425 22:34:33.899" endtime="20220425 22:34:34.720"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>Username:${username} inputted.</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:19:08.036" endtime="20220425 22:19:08.038"></status>
+<status status="PASS" starttime="20220425 22:34:34.720" endtime="20220425 22:34:34.722"></status>
 </kw>
-<status status="PASS" starttime="20220425 22:19:05.713" endtime="20220425 22:19:08.039"></status>
+<status status="PASS" starttime="20220425 22:34:33.897" endtime="20220425 22:34:34.723"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>Username entered.</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:19:08.040" endtime="20220425 22:19:08.041"></status>
+<status status="PASS" starttime="20220425 22:34:34.723" endtime="20220425 22:34:34.723"></status>
 </kw>
 <kw name="Input Password" library="LoginKeywords">
 <arguments>
@@ -79,7 +79,7 @@
 <arguments>
 <arg>Inputting password...</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:19:08.043" endtime="20220425 22:19:08.044"></status>
+<status status="PASS" starttime="20220425 22:34:34.724" endtime="20220425 22:34:34.725"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -87,24 +87,24 @@
 <arg>${field_password}</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20220425 22:19:08.046" level="INFO">Typing text 'd3t@1l@dm1n' into text field 'xpath:/html/body/div/div/section/section/section/div[1]/div/div/form/div[2]/div/div[1]/input'.</msg>
-<status status="PASS" starttime="20220425 22:19:08.045" endtime="20220425 22:19:08.719"></status>
+<msg timestamp="20220425 22:34:34.725" level="INFO">Typing text 'd3t@1l@dm1n' into text field 'xpath:/html/body/div/div/section/section/section/div[1]/div/div/form/div[2]/div/div[1]/input'.</msg>
+<status status="PASS" starttime="20220425 22:34:34.725" endtime="20220425 22:34:35.159"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>Password Inputted.</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:19:08.719" endtime="20220425 22:19:08.720"></status>
+<status status="PASS" starttime="20220425 22:34:35.159" endtime="20220425 22:34:35.160"></status>
 </kw>
-<status status="PASS" starttime="20220425 22:19:08.042" endtime="20220425 22:19:08.722"></status>
+<status status="PASS" starttime="20220425 22:34:34.724" endtime="20220425 22:34:35.161"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>Password entered.</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:19:08.722" endtime="20220425 22:19:08.723"></status>
+<status status="PASS" starttime="20220425 22:34:35.161" endtime="20220425 22:34:35.163"></status>
 </kw>
 <kw name="Click Login" library="LoginKeywords">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -112,17 +112,17 @@
 <arguments>
 <arg>${btn_login}</arg>
 </arguments>
-<msg timestamp="20220425 22:19:08.728" level="INFO">Clicking element 'xpath:/html/body/div/div/section/section/section/div[1]/div/div/form/div[3]/div/button'.</msg>
-<status status="PASS" starttime="20220425 22:19:08.726" endtime="20220425 22:19:09.194"></status>
+<msg timestamp="20220425 22:34:35.166" level="INFO">Clicking element 'xpath:/html/body/div/div/section/section/section/div[1]/div/div/form/div[3]/div/button'.</msg>
+<status status="PASS" starttime="20220425 22:34:35.166" endtime="20220425 22:34:35.461"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>Waiting to Login...</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:19:09.194" endtime="20220425 22:19:09.196"></status>
+<status status="PASS" starttime="20220425 22:34:35.461" endtime="20220425 22:34:35.463"></status>
 </kw>
-<status status="PASS" starttime="20220425 22:19:08.724" endtime="20220425 22:19:09.197"></status>
+<status status="PASS" starttime="20220425 22:34:35.164" endtime="20220425 22:34:35.464"></status>
 </kw>
 <kw name="Verify Login Success" library="LoginKeywords">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
@@ -131,34 +131,34 @@
 <arg>${scorecard}</arg>
 <arg>60s</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:19:09.197" endtime="20220425 22:19:22.145"></status>
+<status status="PASS" starttime="20220425 22:34:35.465" endtime="20220425 22:34:44.764"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>User logged in successfully</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:19:22.146" endtime="20220425 22:19:22.147"></status>
+<status status="PASS" starttime="20220425 22:34:44.764" endtime="20220425 22:34:44.766"></status>
 </kw>
-<status status="PASS" starttime="20220425 22:19:09.197" endtime="20220425 22:19:22.148"></status>
+<status status="PASS" starttime="20220425 22:34:35.464" endtime="20220425 22:34:44.767"></status>
 </kw>
-<status status="PASS" starttime="20220425 22:19:05.711" endtime="20220425 22:19:22.148"></status>
+<status status="PASS" starttime="20220425 22:34:33.896" endtime="20220425 22:34:44.769"></status>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <doc>Sets the delay that is waited after each Selenium command.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:19:22.149" endtime="20220425 22:19:22.149"></status>
+<status status="PASS" starttime="20220425 22:34:44.770" endtime="20220425 22:34:44.771"></status>
 </kw>
 <kw name="Set Selenium Timeout" library="SeleniumLibrary">
 <doc>Sets the timeout that is used by various keywords.</doc>
 <arguments>
 <arg>60s</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:19:22.150" endtime="20220425 22:19:24.153"></status>
+<status status="PASS" starttime="20220425 22:34:44.772" endtime="20220425 22:34:46.788"></status>
 </kw>
-<status status="PASS" starttime="20220425 22:18:41.842" endtime="20220425 22:19:24.155"></status>
+<status status="PASS" starttime="20220425 22:34:10.613" endtime="20220425 22:34:46.788"></status>
 </kw>
 <test id="s1-t1" name="Scorecard: Verify access to page">
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
@@ -166,20 +166,20 @@
 <arguments>
 <arg>${scorecard}</arg>
 </arguments>
-<msg timestamp="20220425 22:19:28.263" level="INFO">Element 'xpath:/html/body/div[1]/div/section/section[1]/div[1]/div[1]/div' is displayed.</msg>
-<status status="PASS" starttime="20220425 22:19:24.160" endtime="20220425 22:19:28.263"></status>
+<msg timestamp="20220425 22:34:50.884" level="INFO">Element 'xpath:/html/body/div[1]/div/section/section[1]/div[1]/div[1]/div' is displayed.</msg>
+<status status="PASS" starttime="20220425 22:34:46.793" endtime="20220425 22:34:50.885"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>Score Card is accessed.</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:19:28.264" endtime="20220425 22:19:28.264"></status>
+<status status="PASS" starttime="20220425 22:34:50.887" endtime="20220425 22:34:50.888"></status>
 </kw>
 <tags>
 <tag>start</tag>
 </tags>
-<status status="PASS" starttime="20220425 22:19:24.155" endtime="20220425 22:19:28.265" critical="yes"></status>
+<status status="PASS" starttime="20220425 22:34:46.790" endtime="20220425 22:34:50.890" critical="yes"></status>
 </test>
 <test id="s1-t2" name="Scorecard: Verify contents on page">
 <kw name="Check Score Card Contents" library="ScorecardKeywords">
@@ -189,14 +189,14 @@
 <arg>${date_navbar}</arg>
 <arg>10s</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:19:28.269" endtime="20220425 22:19:32.369"></status>
+<status status="PASS" starttime="20220425 22:34:50.899" endtime="20220425 22:34:55.031"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>contains date picker nav bar</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:19:32.370" endtime="20220425 22:19:32.371"></status>
+<status status="PASS" starttime="20220425 22:34:55.032" endtime="20220425 22:34:55.034"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
@@ -204,14 +204,14 @@
 <arg>${date_picker}</arg>
 <arg>10s</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:19:32.372" endtime="20220425 22:19:36.479"></status>
+<status status="PASS" starttime="20220425 22:34:55.034" endtime="20220425 22:34:59.155"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>contains date picker button</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:19:36.480" endtime="20220425 22:19:36.481"></status>
+<status status="PASS" starttime="20220425 22:34:59.156" endtime="20220425 22:34:59.157"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
@@ -219,14 +219,14 @@
 <arg>${overall_text}</arg>
 <arg>10s</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:19:36.482" endtime="20220425 22:19:40.604"></status>
+<status status="PASS" starttime="20220425 22:34:59.158" endtime="20220425 22:35:03.286"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>contains Scorecard overall score</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:19:40.604" endtime="20220425 22:19:40.605"></status>
+<status status="PASS" starttime="20220425 22:35:03.287" endtime="20220425 22:35:03.289"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
@@ -234,14 +234,14 @@
 <arg>${overall_display_text}</arg>
 <arg>10s</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:19:40.606" endtime="20220425 22:19:44.794"></status>
+<status status="PASS" starttime="20220425 22:35:03.289" endtime="20220425 22:35:07.415"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>contains Display percentage</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:19:44.795" endtime="20220425 22:19:44.797"></status>
+<status status="PASS" starttime="20220425 22:35:07.416" endtime="20220425 22:35:07.417"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
@@ -249,14 +249,14 @@
 <arg>${overall_inspire_text}</arg>
 <arg>10s</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:19:44.798" endtime="20220425 22:19:48.930"></status>
+<status status="PASS" starttime="20220425 22:35:07.418" endtime="20220425 22:35:11.610"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>contains Inspire percentage</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:19:48.931" endtime="20220425 22:19:48.933"></status>
+<status status="PASS" starttime="20220425 22:35:11.611" endtime="20220425 22:35:11.613"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
@@ -264,14 +264,14 @@
 <arg>${overall_convert_text}</arg>
 <arg>10s</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:19:48.933" endtime="20220425 22:19:53.083"></status>
+<status status="PASS" starttime="20220425 22:35:11.613" endtime="20220425 22:35:15.755"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>contains Convert percentage</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:19:53.084" endtime="20220425 22:19:53.086"></status>
+<status status="PASS" starttime="20220425 22:35:15.756" endtime="20220425 22:35:15.758"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
@@ -279,14 +279,14 @@
 <arg>${country_panel_scorecard}</arg>
 <arg>10s</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:19:53.087" endtime="20220425 22:19:57.241"></status>
+<status status="PASS" starttime="20220425 22:35:15.758" endtime="20220425 22:35:19.869"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>contains Country section</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:19:57.242" endtime="20220425 22:19:57.244"></status>
+<status status="PASS" starttime="20220425 22:35:19.870" endtime="20220425 22:35:19.872"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
@@ -294,14 +294,14 @@
 <arg>${retailer_panel_scorecard}</arg>
 <arg>10s</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:19:57.245" endtime="20220425 22:20:01.401"></status>
+<status status="PASS" starttime="20220425 22:35:19.872" endtime="20220425 22:35:23.986"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>contains Retailer section</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:20:01.403" endtime="20220425 22:20:01.404"></status>
+<status status="PASS" starttime="20220425 22:35:23.986" endtime="20220425 22:35:23.988"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
@@ -309,14 +309,14 @@
 <arg>${prodgroup_panel_scorecard}</arg>
 <arg>10s</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:20:01.406" endtime="20220425 22:20:05.534"></status>
+<status status="PASS" starttime="20220425 22:35:23.989" endtime="20220425 22:35:28.113"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>contains Product Group section</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:20:05.535" endtime="20220425 22:20:05.537"></status>
+<status status="PASS" starttime="20220425 22:35:28.113" endtime="20220425 22:35:28.115"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
@@ -324,21 +324,21 @@
 <arg>${country_filter}</arg>
 <arg>10s</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:20:05.537" endtime="20220425 22:20:09.678"></status>
+<status status="PASS" starttime="20220425 22:35:28.115" endtime="20220425 22:35:32.232"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>contains Filters panel</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:20:09.679" endtime="20220425 22:20:09.680"></status>
+<status status="PASS" starttime="20220425 22:35:32.233" endtime="20220425 22:35:32.235"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>contains Country filter in Filters</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:20:09.681" endtime="20220425 22:20:09.682"></status>
+<status status="PASS" starttime="20220425 22:35:32.236" endtime="20220425 22:35:32.243"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
@@ -346,14 +346,14 @@
 <arg>${retailer_filter}</arg>
 <arg>10s</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:20:09.684" endtime="20220425 22:20:13.823"></status>
+<status status="PASS" starttime="20220425 22:35:32.244" endtime="20220425 22:35:36.396"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>contains Retailers filter in Filters</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:20:13.823" endtime="20220425 22:20:13.825"></status>
+<status status="PASS" starttime="20220425 22:35:36.397" endtime="20220425 22:35:36.399"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
@@ -361,14 +361,14 @@
 <arg>${brand_filter}</arg>
 <arg>10s</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:20:13.826" endtime="20220425 22:20:18.002"></status>
+<status status="PASS" starttime="20220425 22:35:36.400" endtime="20220425 22:35:40.518"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>contains Brand filter in Filters</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:20:18.002" endtime="20220425 22:20:18.004"></status>
+<status status="PASS" starttime="20220425 22:35:40.519" endtime="20220425 22:35:40.521"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
@@ -376,14 +376,14 @@
 <arg>${prodgroup_filter}</arg>
 <arg>10s</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:20:18.004" endtime="20220425 22:20:22.197"></status>
+<status status="PASS" starttime="20220425 22:35:40.521" endtime="20220425 22:35:44.663"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>contains Product group filter in Filters</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:20:22.198" endtime="20220425 22:20:22.200"></status>
+<status status="PASS" starttime="20220425 22:35:44.664" endtime="20220425 22:35:44.666"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
@@ -391,18 +391,18 @@
 <arg>${saved_panel}</arg>
 <arg>10s</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:20:22.201" endtime="20220425 22:20:26.426"></status>
+<status status="PASS" starttime="20220425 22:35:44.666" endtime="20220425 22:35:48.812"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>contains Saved filters panel</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:20:26.426" endtime="20220425 22:20:26.428"></status>
+<status status="PASS" starttime="20220425 22:35:48.812" endtime="20220425 22:35:48.814"></status>
 </kw>
-<status status="PASS" starttime="20220425 22:19:28.268" endtime="20220425 22:20:26.429"></status>
+<status status="PASS" starttime="20220425 22:34:50.898" endtime="20220425 22:35:48.815"></status>
 </kw>
-<status status="PASS" starttime="20220425 22:19:28.267" endtime="20220425 22:20:26.431" critical="yes"></status>
+<status status="PASS" starttime="20220425 22:34:50.896" endtime="20220425 22:35:48.819" critical="yes"></status>
 </test>
 <test id="s1-t3" name="Scorecard: Verify date picker if working properly">
 <kw name="Check calendar" library="ScorecardKeywords">
@@ -411,25 +411,25 @@
 <arguments>
 <arg>${date_picker}</arg>
 </arguments>
-<msg timestamp="20220425 22:20:26.442" level="INFO">Clicking element 'xpath:/html/body/div[1]/div/section/section[1]/div[1]/div[1]/div/div/div[2]/div[1]/div/div/div[2]/div/input'.</msg>
-<status status="PASS" starttime="20220425 22:20:26.440" endtime="20220425 22:20:30.923"></status>
+<msg timestamp="20220425 22:35:48.831" level="INFO">Clicking element 'xpath:/html/body/div[1]/div/section/section[1]/div[1]/div[1]/div/div/div[2]/div[1]/div/div/div[2]/div/input'.</msg>
+<status status="PASS" starttime="20220425 22:35:48.830" endtime="20220425 22:35:53.369"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>Calendar is Visible</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:20:30.924" endtime="20220425 22:20:30.926"></status>
+<status status="PASS" starttime="20220425 22:35:53.370" endtime="20220425 22:35:53.372"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${date_picker}</arg>
 </arguments>
-<msg timestamp="20220425 22:20:30.928" level="INFO">Clicking element 'xpath:/html/body/div[1]/div/section/section[1]/div[1]/div[1]/div/div/div[2]/div[1]/div/div/div[2]/div/input'.</msg>
-<status status="PASS" starttime="20220425 22:20:30.927" endtime="20220425 22:20:35.073"></status>
+<msg timestamp="20220425 22:35:53.373" level="INFO">Clicking element 'xpath:/html/body/div[1]/div/section/section[1]/div[1]/div[1]/div/div/div[2]/div[1]/div/div/div[2]/div/input'.</msg>
+<status status="PASS" starttime="20220425 22:35:53.372" endtime="20220425 22:35:57.533"></status>
 </kw>
-<status status="PASS" starttime="20220425 22:20:26.439" endtime="20220425 22:20:35.074"></status>
+<status status="PASS" starttime="20220425 22:35:48.829" endtime="20220425 22:35:57.534"></status>
 </kw>
 <kw name="Check month slider" library="ScorecardKeywords">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -437,8 +437,8 @@
 <arguments>
 <arg>${date_picker}</arg>
 </arguments>
-<msg timestamp="20220425 22:20:35.078" level="INFO">Clicking element 'xpath:/html/body/div[1]/div/section/section[1]/div[1]/div[1]/div/div/div[2]/div[1]/div/div/div[2]/div/input'.</msg>
-<status status="PASS" starttime="20220425 22:20:35.077" endtime="20220425 22:20:39.214"></status>
+<msg timestamp="20220425 22:35:57.539" level="INFO">Clicking element 'xpath:/html/body/div[1]/div/section/section[1]/div[1]/div[1]/div/div/div[2]/div[1]/div/div/div[2]/div/input'.</msg>
+<status status="PASS" starttime="20220425 22:35:57.538" endtime="20220425 22:36:01.686"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
@@ -446,7 +446,7 @@
 <arg>${next_month_slider}</arg>
 <arg>60s</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:20:39.215" endtime="20220425 22:20:43.483"></status>
+<status status="PASS" starttime="20220425 22:36:01.686" endtime="20220425 22:36:05.813"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of the element identified by ``locator``.</doc>
@@ -456,23 +456,23 @@
 <assign>
 <var>${curr}</var>
 </assign>
-<msg timestamp="20220425 22:20:47.639" level="INFO">${curr} = April</msg>
-<status status="PASS" starttime="20220425 22:20:43.483" endtime="20220425 22:20:47.639"></status>
+<msg timestamp="20220425 22:36:09.959" level="INFO">${curr} = April</msg>
+<status status="PASS" starttime="20220425 22:36:05.814" endtime="20220425 22:36:09.959"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>Current Month: ${curr}</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:20:47.640" endtime="20220425 22:20:47.642"></status>
+<status status="PASS" starttime="20220425 22:36:09.960" endtime="20220425 22:36:09.962"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${next_month_slider}</arg>
 </arguments>
-<msg timestamp="20220425 22:20:47.643" level="INFO">Clicking element 'xpath:/html/body/div[2]/div[1]/div/div[1]/button[4]'.</msg>
-<status status="PASS" starttime="20220425 22:20:47.642" endtime="20220425 22:20:51.997"></status>
+<msg timestamp="20220425 22:36:09.963" level="INFO">Clicking element 'xpath:/html/body/div[2]/div[1]/div/div[1]/button[4]'.</msg>
+<status status="PASS" starttime="20220425 22:36:09.962" endtime="20220425 22:36:14.267"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of the element identified by ``locator``.</doc>
@@ -482,31 +482,31 @@
 <assign>
 <var>${next}</var>
 </assign>
-<msg timestamp="20220425 22:20:56.070" level="INFO">${next} = May</msg>
-<status status="PASS" starttime="20220425 22:20:51.998" endtime="20220425 22:20:56.072"></status>
+<msg timestamp="20220425 22:36:18.350" level="INFO">${next} = May</msg>
+<status status="PASS" starttime="20220425 22:36:14.268" endtime="20220425 22:36:18.351"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>Next Month: ${next}</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:20:56.072" endtime="20220425 22:20:56.073"></status>
+<status status="PASS" starttime="20220425 22:36:18.353" endtime="20220425 22:36:18.357"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${prev_month_slider}</arg>
 </arguments>
-<msg timestamp="20220425 22:20:56.075" level="INFO">Clicking element 'xpath:/html/body/div[2]/div[1]/div/div[1]/button[2]'.</msg>
-<status status="PASS" starttime="20220425 22:20:56.074" endtime="20220425 22:21:00.455"></status>
+<msg timestamp="20220425 22:36:18.361" level="INFO">Clicking element 'xpath:/html/body/div[2]/div[1]/div/div[1]/button[2]'.</msg>
+<status status="PASS" starttime="20220425 22:36:18.359" endtime="20220425 22:36:22.900"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${prev_month_slider}</arg>
 </arguments>
-<msg timestamp="20220425 22:21:00.458" level="INFO">Clicking element 'xpath:/html/body/div[2]/div[1]/div/div[1]/button[2]'.</msg>
-<status status="PASS" starttime="20220425 22:21:00.456" endtime="20220425 22:21:04.619"></status>
+<msg timestamp="20220425 22:36:22.902" level="INFO">Clicking element 'xpath:/html/body/div[2]/div[1]/div/div[1]/button[2]'.</msg>
+<status status="PASS" starttime="20220425 22:36:22.901" endtime="20220425 22:36:27.068"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of the element identified by ``locator``.</doc>
@@ -516,17 +516,17 @@
 <assign>
 <var>${prev}</var>
 </assign>
-<msg timestamp="20220425 22:21:08.678" level="INFO">${prev} = March</msg>
-<status status="PASS" starttime="20220425 22:21:04.620" endtime="20220425 22:21:08.679"></status>
+<msg timestamp="20220425 22:36:31.135" level="INFO">${prev} = March</msg>
+<status status="PASS" starttime="20220425 22:36:27.068" endtime="20220425 22:36:31.135"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>Previous Month: ${prev}</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:21:08.679" endtime="20220425 22:21:08.681"></status>
+<status status="PASS" starttime="20220425 22:36:31.135" endtime="20220425 22:36:31.137"></status>
 </kw>
-<status status="PASS" starttime="20220425 22:20:35.076" endtime="20220425 22:21:08.682"></status>
+<status status="PASS" starttime="20220425 22:35:57.536" endtime="20220425 22:36:31.138"></status>
 </kw>
 <kw name="Check year slider" library="ScorecardKeywords">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -534,8 +534,8 @@
 <arguments>
 <arg>${date_picker}</arg>
 </arguments>
-<msg timestamp="20220425 22:21:08.685" level="INFO">Clicking element 'xpath:/html/body/div[1]/div/section/section[1]/div[1]/div[1]/div/div/div[2]/div[1]/div/div/div[2]/div/input'.</msg>
-<status status="PASS" starttime="20220425 22:21:08.684" endtime="20220425 22:21:12.851"></status>
+<msg timestamp="20220425 22:36:31.143" level="INFO">Clicking element 'xpath:/html/body/div[1]/div/section/section[1]/div[1]/div[1]/div/div/div[2]/div[1]/div/div/div[2]/div/input'.</msg>
+<status status="PASS" starttime="20220425 22:36:31.142" endtime="20220425 22:36:35.307"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
@@ -543,14 +543,14 @@
 <arg>${next_year_slider}</arg>
 <arg>60s</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:21:12.852" endtime="20220425 22:21:16.975"></status>
+<status status="PASS" starttime="20220425 22:36:35.308" endtime="20220425 22:36:39.429"></status>
 </kw>
-<status status="PASS" starttime="20220425 22:21:08.683" endtime="20220425 22:21:16.976"></status>
+<status status="PASS" starttime="20220425 22:36:31.140" endtime="20220425 22:36:39.430"></status>
 </kw>
 <tags>
 <tag>filter</tag>
 </tags>
-<status status="PASS" starttime="20220425 22:20:26.435" endtime="20220425 22:21:16.978" critical="yes"></status>
+<status status="PASS" starttime="20220425 22:35:48.825" endtime="20220425 22:36:39.432" critical="yes"></status>
 </test>
 <test id="s1-t4" name="Scorecard: Verify Display Overall calculation">
 <kw name="Verify Display Pillar Score" library="ScorecardKeywords">
@@ -559,8 +559,8 @@
 <arguments>
 <arg>${display_pillar}</arg>
 </arguments>
-<msg timestamp="20220425 22:21:16.988" level="INFO">Clicking element 'xpath:/html/body/div[1]/div/section/section[1]/div[1]/div[1]/div/div/div[2]/div[2]/a[1]/div/div/section/div'.</msg>
-<status status="PASS" starttime="20220425 22:21:16.987" endtime="20220425 22:21:21.382"></status>
+<msg timestamp="20220425 22:36:39.478" level="INFO">Clicking element 'xpath:/html/body/div[1]/div/section/section[1]/div[1]/div[1]/div/div/div[2]/div[2]/a[1]/div/div/section/div'.</msg>
+<status status="PASS" starttime="20220425 22:36:39.477" endtime="20220425 22:36:43.845"></status>
 </kw>
 <kw name="Get Score" library="ScorecardKeywords">
 <arguments>
@@ -577,8 +577,8 @@
 <assign>
 <var>${module_score}</var>
 </assign>
-<msg timestamp="20220425 22:21:25.524" level="INFO">${module_score} = 23.91</msg>
-<status status="PASS" starttime="20220425 22:21:21.385" endtime="20220425 22:21:25.524"></status>
+<msg timestamp="20220425 22:36:48.010" level="INFO">${module_score} = 23.91</msg>
+<status status="PASS" starttime="20220425 22:36:43.848" endtime="20220425 22:36:48.011"></status>
 </kw>
 <kw name="Convert To Number" library="BuiltIn">
 <doc>Converts the given item to a floating point number.</doc>
@@ -588,33 +588,33 @@
 <assign>
 <var>${module_score}</var>
 </assign>
-<msg timestamp="20220425 22:21:25.528" level="INFO">${module_score} = 23.91</msg>
-<status status="PASS" starttime="20220425 22:21:25.525" endtime="20220425 22:21:25.528"></status>
+<msg timestamp="20220425 22:36:48.013" level="INFO">${module_score} = 23.91</msg>
+<status status="PASS" starttime="20220425 22:36:48.011" endtime="20220425 22:36:48.013"></status>
 </kw>
-<msg timestamp="20220425 22:21:25.530" level="INFO">${display_score} = 23.91</msg>
-<status status="PASS" starttime="20220425 22:21:21.383" endtime="20220425 22:21:25.530"></status>
+<msg timestamp="20220425 22:36:48.014" level="INFO">${display_score} = 23.91</msg>
+<status status="PASS" starttime="20220425 22:36:43.846" endtime="20220425 22:36:48.014"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>DISPLAY SCORE from Scorecard: ${display_score}</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:21:25.531" endtime="20220425 22:21:25.532"></status>
+<status status="PASS" starttime="20220425 22:36:48.014" endtime="20220425 22:36:48.015"></status>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
 <doc>Clicks a link identified by ``locator``.</doc>
 <arguments>
 <arg>${display_tab}</arg>
 </arguments>
-<msg timestamp="20220425 22:21:25.534" level="INFO">Clicking link 'xpath:/html/body/div/div/section/section[2]/div[1]/div[1]/a[3]'.</msg>
-<status status="PASS" starttime="20220425 22:21:25.533" endtime="20220425 22:21:32.024"></status>
+<msg timestamp="20220425 22:36:48.017" level="INFO">Clicking link 'xpath:/html/body/div/div/section/section[2]/div[1]/div[1]/a[3]'.</msg>
+<status status="PASS" starttime="20220425 22:36:48.016" endtime="20220425 22:36:54.331"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>Accessing Display Modules...</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:21:32.025" endtime="20220425 22:21:32.027"></status>
+<status status="PASS" starttime="20220425 22:36:54.331" endtime="20220425 22:36:54.332"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
@@ -622,7 +622,7 @@
 <arg>${sos_rankings}</arg>
 <arg>60s</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:21:32.028" endtime="20220425 22:21:40.701"></status>
+<status status="PASS" starttime="20220425 22:36:54.332" endtime="20220425 22:37:05.198"></status>
 </kw>
 <kw name="Get Score" library="ScorecardKeywords">
 <arguments>
@@ -639,8 +639,8 @@
 <assign>
 <var>${module_score}</var>
 </assign>
-<msg timestamp="20220425 22:21:44.822" level="INFO">${module_score} = 5.84</msg>
-<status status="PASS" starttime="20220425 22:21:40.704" endtime="20220425 22:21:44.822"></status>
+<msg timestamp="20220425 22:37:09.321" level="INFO">${module_score} = 5.84</msg>
+<status status="PASS" starttime="20220425 22:37:05.200" endtime="20220425 22:37:09.322"></status>
 </kw>
 <kw name="Convert To Number" library="BuiltIn">
 <doc>Converts the given item to a floating point number.</doc>
@@ -650,11 +650,11 @@
 <assign>
 <var>${module_score}</var>
 </assign>
-<msg timestamp="20220425 22:21:44.825" level="INFO">${module_score} = 5.84</msg>
-<status status="PASS" starttime="20220425 22:21:44.823" endtime="20220425 22:21:44.825"></status>
+<msg timestamp="20220425 22:37:09.323" level="INFO">${module_score} = 5.84</msg>
+<status status="PASS" starttime="20220425 22:37:09.322" endtime="20220425 22:37:09.323"></status>
 </kw>
-<msg timestamp="20220425 22:21:44.826" level="INFO">${searchwords_score} = 5.84</msg>
-<status status="PASS" starttime="20220425 22:21:40.701" endtime="20220425 22:21:44.826"></status>
+<msg timestamp="20220425 22:37:09.324" level="INFO">${searchwords_score} = 5.84</msg>
+<status status="PASS" starttime="20220425 22:37:05.198" endtime="20220425 22:37:09.324"></status>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <doc>Evaluates the given expression in Python and returns the result.</doc>
@@ -664,15 +664,15 @@
 <assign>
 <var>${searchwords}</var>
 </assign>
-<msg timestamp="20220425 22:21:44.828" level="INFO">${searchwords} = 1.752</msg>
-<status status="PASS" starttime="20220425 22:21:44.827" endtime="20220425 22:21:44.828"></status>
+<msg timestamp="20220425 22:37:09.326" level="INFO">${searchwords} = 1.752</msg>
+<status status="PASS" starttime="20220425 22:37:09.325" endtime="20220425 22:37:09.326"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>Search Words SCORE: ${searchwords_score}</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:21:44.828" endtime="20220425 22:21:44.830"></status>
+<status status="PASS" starttime="20220425 22:37:09.326" endtime="20220425 22:37:09.328"></status>
 </kw>
 <kw name="Get Score" library="ScorecardKeywords">
 <arguments>
@@ -689,8 +689,8 @@
 <assign>
 <var>${module_score}</var>
 </assign>
-<msg timestamp="20220425 22:21:48.984" level="INFO">${module_score} = 48.59</msg>
-<status status="PASS" starttime="20220425 22:21:44.832" endtime="20220425 22:21:48.984"></status>
+<msg timestamp="20220425 22:37:13.473" level="INFO">${module_score} = 48.59</msg>
+<status status="PASS" starttime="20220425 22:37:09.330" endtime="20220425 22:37:13.473"></status>
 </kw>
 <kw name="Convert To Number" library="BuiltIn">
 <doc>Converts the given item to a floating point number.</doc>
@@ -700,11 +700,11 @@
 <assign>
 <var>${module_score}</var>
 </assign>
-<msg timestamp="20220425 22:21:48.987" level="INFO">${module_score} = 48.59</msg>
-<status status="PASS" starttime="20220425 22:21:48.985" endtime="20220425 22:21:48.987"></status>
+<msg timestamp="20220425 22:37:13.475" level="INFO">${module_score} = 48.59</msg>
+<status status="PASS" starttime="20220425 22:37:13.474" endtime="20220425 22:37:13.475"></status>
 </kw>
-<msg timestamp="20220425 22:21:48.988" level="INFO">${visibility_score} = 48.59</msg>
-<status status="PASS" starttime="20220425 22:21:44.831" endtime="20220425 22:21:48.989"></status>
+<msg timestamp="20220425 22:37:13.476" level="INFO">${visibility_score} = 48.59</msg>
+<status status="PASS" starttime="20220425 22:37:09.328" endtime="20220425 22:37:13.476"></status>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <doc>Evaluates the given expression in Python and returns the result.</doc>
@@ -714,15 +714,15 @@
 <assign>
 <var>${visibility}</var>
 </assign>
-<msg timestamp="20220425 22:21:48.991" level="INFO">${visibility} = 19.436000000000003</msg>
-<status status="PASS" starttime="20220425 22:21:48.989" endtime="20220425 22:21:48.991"></status>
+<msg timestamp="20220425 22:37:13.478" level="INFO">${visibility} = 19.436000000000003</msg>
+<status status="PASS" starttime="20220425 22:37:13.477" endtime="20220425 22:37:13.478"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>Visibility SCORE: ${visibility_score}</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:21:48.991" endtime="20220425 22:21:48.993"></status>
+<status status="PASS" starttime="20220425 22:37:13.479" endtime="20220425 22:37:13.480"></status>
 </kw>
 <kw name="Get Score" library="ScorecardKeywords">
 <arguments>
@@ -739,8 +739,8 @@
 <assign>
 <var>${module_score}</var>
 </assign>
-<msg timestamp="20220425 22:21:53.129" level="INFO">${module_score} = 9.08</msg>
-<status status="PASS" starttime="20220425 22:21:48.995" endtime="20220425 22:21:53.129"></status>
+<msg timestamp="20220425 22:37:17.632" level="INFO">${module_score} = 9.08</msg>
+<status status="PASS" starttime="20220425 22:37:13.482" endtime="20220425 22:37:17.632"></status>
 </kw>
 <kw name="Convert To Number" library="BuiltIn">
 <doc>Converts the given item to a floating point number.</doc>
@@ -750,11 +750,11 @@
 <assign>
 <var>${module_score}</var>
 </assign>
-<msg timestamp="20220425 22:21:53.132" level="INFO">${module_score} = 9.08</msg>
-<status status="PASS" starttime="20220425 22:21:53.130" endtime="20220425 22:21:53.132"></status>
+<msg timestamp="20220425 22:37:17.634" level="INFO">${module_score} = 9.08</msg>
+<status status="PASS" starttime="20220425 22:37:17.633" endtime="20220425 22:37:17.634"></status>
 </kw>
-<msg timestamp="20220425 22:21:53.133" level="INFO">${categories_score} = 9.08</msg>
-<status status="PASS" starttime="20220425 22:21:48.994" endtime="20220425 22:21:53.134"></status>
+<msg timestamp="20220425 22:37:17.636" level="INFO">${categories_score} = 9.08</msg>
+<status status="PASS" starttime="20220425 22:37:13.481" endtime="20220425 22:37:17.636"></status>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <doc>Evaluates the given expression in Python and returns the result.</doc>
@@ -764,15 +764,15 @@
 <assign>
 <var>${categories}</var>
 </assign>
-<msg timestamp="20220425 22:21:53.135" level="INFO">${categories} = 2.7239999999999998</msg>
-<status status="PASS" starttime="20220425 22:21:53.134" endtime="20220425 22:21:53.135"></status>
+<msg timestamp="20220425 22:37:17.638" level="INFO">${categories} = 2.7239999999999998</msg>
+<status status="PASS" starttime="20220425 22:37:17.636" endtime="20220425 22:37:17.638"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>Categories SCORE: ${categories_score}</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:21:53.135" endtime="20220425 22:21:53.137"></status>
+<status status="PASS" starttime="20220425 22:37:17.638" endtime="20220425 22:37:17.641"></status>
 </kw>
 <kw name="Compute Overall Score" library="ScorecardKeywords">
 <arguments>
@@ -791,8 +791,8 @@
 <assign>
 <var>${temp}</var>
 </assign>
-<msg timestamp="20220425 22:21:53.141" level="INFO">${temp} = 21.188000000000002</msg>
-<status status="PASS" starttime="20220425 22:21:53.140" endtime="20220425 22:21:53.142"></status>
+<msg timestamp="20220425 22:37:17.645" level="INFO">${temp} = 21.188000000000002</msg>
+<status status="PASS" starttime="20220425 22:37:17.644" endtime="20220425 22:37:17.645"></status>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <doc>Evaluates the given expression in Python and returns the result.</doc>
@@ -802,18 +802,18 @@
 <assign>
 <var>${result}</var>
 </assign>
-<msg timestamp="20220425 22:21:53.144" level="INFO">${result} = 23.912000000000003</msg>
-<status status="PASS" starttime="20220425 22:21:53.142" endtime="20220425 22:21:53.144"></status>
+<msg timestamp="20220425 22:37:17.648" level="INFO">${result} = 23.912000000000003</msg>
+<status status="PASS" starttime="20220425 22:37:17.646" endtime="20220425 22:37:17.648"></status>
 </kw>
-<msg timestamp="20220425 22:21:53.145" level="INFO">${overall} = 23.912000000000003</msg>
-<status status="PASS" starttime="20220425 22:21:53.138" endtime="20220425 22:21:53.146"></status>
+<msg timestamp="20220425 22:37:17.649" level="INFO">${overall} = 23.912000000000003</msg>
+<status status="PASS" starttime="20220425 22:37:17.641" endtime="20220425 22:37:17.650"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>Computed Overall Display Score: ${overall}</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:21:53.146" endtime="20220425 22:21:53.148"></status>
+<status status="PASS" starttime="20220425 22:37:17.650" endtime="20220425 22:37:17.652"></status>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <doc>Evaluates the given expression in Python and returns the result.</doc>
@@ -823,8 +823,8 @@
 <assign>
 <var>${upper_range}</var>
 </assign>
-<msg timestamp="20220425 22:21:53.149" level="INFO">${upper_range} = 23.962000000000003</msg>
-<status status="PASS" starttime="20220425 22:21:53.148" endtime="20220425 22:21:53.150"></status>
+<msg timestamp="20220425 22:37:17.654" level="INFO">${upper_range} = 23.962000000000003</msg>
+<status status="PASS" starttime="20220425 22:37:17.652" endtime="20220425 22:37:17.654"></status>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <doc>Evaluates the given expression in Python and returns the result.</doc>
@@ -834,8 +834,8 @@
 <assign>
 <var>${lower_range}</var>
 </assign>
-<msg timestamp="20220425 22:21:53.151" level="INFO">${lower_range} = 23.862000000000002</msg>
-<status status="PASS" starttime="20220425 22:21:53.150" endtime="20220425 22:21:53.151"></status>
+<msg timestamp="20220425 22:37:17.656" level="INFO">${lower_range} = 23.862000000000002</msg>
+<status status="PASS" starttime="20220425 22:37:17.654" endtime="20220425 22:37:17.656"></status>
 </kw>
 <kw name="Run Keyword Unless" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments if ``condition`` is false.</doc>
@@ -857,32 +857,32 @@
 <arguments>
 <arg>Computed Overall ${module} Score: ${computed}</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:21:53.155" endtime="20220425 22:21:53.157"></status>
+<status status="PASS" starttime="20220425 22:37:17.660" endtime="20220425 22:37:17.662"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${module} Score from Scorecard ${displayed} ≈ Computed ${module} score ${computed}</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:21:53.157" endtime="20220425 22:21:53.184"></status>
+<status status="PASS" starttime="20220425 22:37:17.663" endtime="20220425 22:37:17.665"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${module} score is verified!</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:21:53.184" endtime="20220425 22:21:53.186"></status>
+<status status="PASS" starttime="20220425 22:37:17.665" endtime="20220425 22:37:17.666"></status>
 </kw>
-<status status="PASS" starttime="20220425 22:21:53.153" endtime="20220425 22:21:53.187"></status>
+<status status="PASS" starttime="20220425 22:37:17.658" endtime="20220425 22:37:17.667"></status>
 </kw>
-<status status="PASS" starttime="20220425 22:21:53.152" endtime="20220425 22:21:53.187"></status>
+<status status="PASS" starttime="20220425 22:37:17.656" endtime="20220425 22:37:17.667"></status>
 </kw>
-<status status="PASS" starttime="20220425 22:21:16.986" endtime="20220425 22:21:53.188"></status>
+<status status="PASS" starttime="20220425 22:36:39.475" endtime="20220425 22:37:17.667"></status>
 </kw>
 <tags>
 <tag>display</tag>
 </tags>
-<status status="PASS" starttime="20220425 22:21:16.983" endtime="20220425 22:21:53.190" critical="yes"></status>
+<status status="PASS" starttime="20220425 22:36:39.472" endtime="20220425 22:37:17.670" critical="yes"></status>
 </test>
 <test id="s1-t5" name="Scorecard: Verify Inspire Overall calculation">
 <kw name="Verify Inspire Pillar Score" library="ScorecardKeywords">
@@ -891,15 +891,15 @@
 <arguments>
 <arg>${inspire_tab}</arg>
 </arguments>
-<msg timestamp="20220425 22:21:53.202" level="INFO">Clicking link 'xpath:/html/body/div/div/section/section[2]/div[1]/div[1]/a[4]'.</msg>
-<status status="PASS" starttime="20220425 22:21:53.200" endtime="20220425 22:21:59.627"></status>
+<msg timestamp="20220425 22:37:17.713" level="INFO">Clicking link 'xpath:/html/body/div/div/section/section[2]/div[1]/div[1]/a[4]'.</msg>
+<status status="PASS" starttime="20220425 22:37:17.712" endtime="20220425 22:37:24.083"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>Accessing Display Modules...</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:21:59.627" endtime="20220425 22:21:59.629"></status>
+<status status="PASS" starttime="20220425 22:37:24.084" endtime="20220425 22:37:24.086"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
@@ -907,7 +907,7 @@
 <arg>${content_table}</arg>
 <arg>60s</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:21:59.630" endtime="20220425 22:22:19.513"></status>
+<status status="PASS" starttime="20220425 22:37:24.086" endtime="20220425 22:37:45.205"></status>
 </kw>
 <kw name="Get Score" library="ScorecardKeywords">
 <arguments>
@@ -924,8 +924,8 @@
 <assign>
 <var>${module_score}</var>
 </assign>
-<msg timestamp="20220425 22:22:23.662" level="INFO">${module_score} = 47.81</msg>
-<status status="PASS" starttime="20220425 22:22:19.516" endtime="20220425 22:22:23.662"></status>
+<msg timestamp="20220425 22:37:49.338" level="INFO">${module_score} = 47.81</msg>
+<status status="PASS" starttime="20220425 22:37:45.207" endtime="20220425 22:37:49.338"></status>
 </kw>
 <kw name="Convert To Number" library="BuiltIn">
 <doc>Converts the given item to a floating point number.</doc>
@@ -935,11 +935,11 @@
 <assign>
 <var>${module_score}</var>
 </assign>
-<msg timestamp="20220425 22:22:23.664" level="INFO">${module_score} = 47.81</msg>
-<status status="PASS" starttime="20220425 22:22:23.663" endtime="20220425 22:22:23.665"></status>
+<msg timestamp="20220425 22:37:49.340" level="INFO">${module_score} = 47.81</msg>
+<status status="PASS" starttime="20220425 22:37:49.339" endtime="20220425 22:37:49.340"></status>
 </kw>
-<msg timestamp="20220425 22:22:23.665" level="INFO">${content_score} = 47.81</msg>
-<status status="PASS" starttime="20220425 22:22:19.514" endtime="20220425 22:22:23.666"></status>
+<msg timestamp="20220425 22:37:49.341" level="INFO">${content_score} = 47.81</msg>
+<status status="PASS" starttime="20220425 22:37:45.205" endtime="20220425 22:37:49.342"></status>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <doc>Evaluates the given expression in Python and returns the result.</doc>
@@ -949,15 +949,15 @@
 <assign>
 <var>${content}</var>
 </assign>
-<msg timestamp="20220425 22:22:23.667" level="INFO">${content} = 38.248000000000005</msg>
-<status status="PASS" starttime="20220425 22:22:23.666" endtime="20220425 22:22:23.667"></status>
+<msg timestamp="20220425 22:37:49.343" level="INFO">${content} = 38.248000000000005</msg>
+<status status="PASS" starttime="20220425 22:37:49.342" endtime="20220425 22:37:49.344"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>Content SCORE: ${content_score}</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:22:23.668" endtime="20220425 22:22:23.669"></status>
+<status status="PASS" starttime="20220425 22:37:49.344" endtime="20220425 22:37:49.346"></status>
 </kw>
 <kw name="Get Score" library="ScorecardKeywords">
 <arguments>
@@ -974,8 +974,8 @@
 <assign>
 <var>${module_score}</var>
 </assign>
-<msg timestamp="20220425 22:22:27.779" level="INFO">${module_score} = 4.27</msg>
-<status status="PASS" starttime="20220425 22:22:23.671" endtime="20220425 22:22:27.780"></status>
+<msg timestamp="20220425 22:37:53.439" level="INFO">${module_score} = 4.27</msg>
+<status status="PASS" starttime="20220425 22:37:49.349" endtime="20220425 22:37:53.439"></status>
 </kw>
 <kw name="Convert To Number" library="BuiltIn">
 <doc>Converts the given item to a floating point number.</doc>
@@ -985,11 +985,11 @@
 <assign>
 <var>${module_score}</var>
 </assign>
-<msg timestamp="20220425 22:22:27.782" level="INFO">${module_score} = 4.27</msg>
-<status status="PASS" starttime="20220425 22:22:27.781" endtime="20220425 22:22:27.782"></status>
+<msg timestamp="20220425 22:37:53.441" level="INFO">${module_score} = 4.27</msg>
+<status status="PASS" starttime="20220425 22:37:53.440" endtime="20220425 22:37:53.441"></status>
 </kw>
-<msg timestamp="20220425 22:22:27.783" level="INFO">${ratings_score} = 4.27</msg>
-<status status="PASS" starttime="20220425 22:22:23.670" endtime="20220425 22:22:27.783"></status>
+<msg timestamp="20220425 22:37:53.442" level="INFO">${ratings_score} = 4.27</msg>
+<status status="PASS" starttime="20220425 22:37:49.347" endtime="20220425 22:37:53.442"></status>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <doc>Evaluates the given expression in Python and returns the result.</doc>
@@ -999,15 +999,15 @@
 <assign>
 <var>${ratings}</var>
 </assign>
-<msg timestamp="20220425 22:22:27.785" level="INFO">${ratings} = 17.08</msg>
-<status status="PASS" starttime="20220425 22:22:27.784" endtime="20220425 22:22:27.785"></status>
+<msg timestamp="20220425 22:37:53.444" level="INFO">${ratings} = 17.08</msg>
+<status status="PASS" starttime="20220425 22:37:53.443" endtime="20220425 22:37:53.444"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>Ratings SCORE: ${ratings_score}</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:22:27.785" endtime="20220425 22:22:27.787"></status>
+<status status="PASS" starttime="20220425 22:37:53.444" endtime="20220425 22:37:53.446"></status>
 </kw>
 <kw name="Compute Overall Score" library="ScorecardKeywords">
 <arguments>
@@ -1026,8 +1026,8 @@
 <assign>
 <var>${temp}</var>
 </assign>
-<msg timestamp="20220425 22:22:27.791" level="INFO">${temp} = 55.328</msg>
-<status status="PASS" starttime="20220425 22:22:27.789" endtime="20220425 22:22:27.791"></status>
+<msg timestamp="20220425 22:37:53.449" level="INFO">${temp} = 55.328</msg>
+<status status="PASS" starttime="20220425 22:37:53.448" endtime="20220425 22:37:53.449"></status>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <doc>Evaluates the given expression in Python and returns the result.</doc>
@@ -1037,11 +1037,11 @@
 <assign>
 <var>${result}</var>
 </assign>
-<msg timestamp="20220425 22:22:27.792" level="INFO">${result} = 55.328</msg>
-<status status="PASS" starttime="20220425 22:22:27.791" endtime="20220425 22:22:27.792"></status>
+<msg timestamp="20220425 22:37:53.451" level="INFO">${result} = 55.328</msg>
+<status status="PASS" starttime="20220425 22:37:53.450" endtime="20220425 22:37:53.451"></status>
 </kw>
-<msg timestamp="20220425 22:22:27.793" level="INFO">${overall} = 55.328</msg>
-<status status="PASS" starttime="20220425 22:22:27.788" endtime="20220425 22:22:27.793"></status>
+<msg timestamp="20220425 22:37:53.452" level="INFO">${overall} = 55.328</msg>
+<status status="PASS" starttime="20220425 22:37:53.446" endtime="20220425 22:37:53.452"></status>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <doc>Evaluates the given expression in Python and returns the result.</doc>
@@ -1051,8 +1051,8 @@
 <assign>
 <var>${upper_range}</var>
 </assign>
-<msg timestamp="20220425 22:22:27.796" level="INFO">${upper_range} = 55.378</msg>
-<status status="PASS" starttime="20220425 22:22:27.795" endtime="20220425 22:22:27.797"></status>
+<msg timestamp="20220425 22:37:53.454" level="INFO">${upper_range} = 55.378</msg>
+<status status="PASS" starttime="20220425 22:37:53.452" endtime="20220425 22:37:53.454"></status>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <doc>Evaluates the given expression in Python and returns the result.</doc>
@@ -1062,16 +1062,16 @@
 <assign>
 <var>${lower_range}</var>
 </assign>
-<msg timestamp="20220425 22:22:27.800" level="INFO">${lower_range} = 55.278000000000006</msg>
-<status status="PASS" starttime="20220425 22:22:27.797" endtime="20220425 22:22:27.800"></status>
+<msg timestamp="20220425 22:37:53.455" level="INFO">${lower_range} = 55.278000000000006</msg>
+<status status="PASS" starttime="20220425 22:37:53.454" endtime="20220425 22:37:53.456"></status>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
 <doc>Clicks a link identified by ``locator``.</doc>
 <arguments>
 <arg>${scorecard_tab}</arg>
 </arguments>
-<msg timestamp="20220425 22:22:27.801" level="INFO">Clicking link 'xpath:/html/body/div/div/section/section[2]/div[1]/div[1]/a[1]'.</msg>
-<status status="PASS" starttime="20220425 22:22:27.800" endtime="20220425 22:22:34.214"></status>
+<msg timestamp="20220425 22:37:53.457" level="INFO">Clicking link 'xpath:/html/body/div/div/section/section[2]/div[1]/div[1]/a[1]'.</msg>
+<status status="PASS" starttime="20220425 22:37:53.456" endtime="20220425 22:37:59.990"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
@@ -1079,16 +1079,16 @@
 <arg>${inspire_pillar}</arg>
 <arg>60s</arg>
 </arguments>
-<msg timestamp="20220425 22:22:36.425" level="INFO">Suppressing StaleElementReferenceException from Selenium.</msg>
-<status status="PASS" starttime="20220425 22:22:34.214" endtime="20220425 22:22:40.742"></status>
+<msg timestamp="20220425 22:38:02.151" level="INFO">Suppressing StaleElementReferenceException from Selenium.</msg>
+<status status="PASS" starttime="20220425 22:37:59.991" endtime="20220425 22:38:06.541"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${inspire_pillar}</arg>
 </arguments>
-<msg timestamp="20220425 22:22:40.743" level="INFO">Clicking element 'xpath:/html/body/div[1]/div/section/section[1]/div[1]/div[1]/div/div/div[2]/div[2]/a[2]/div/div/section/div'.</msg>
-<status status="PASS" starttime="20220425 22:22:40.742" endtime="20220425 22:22:45.034"></status>
+<msg timestamp="20220425 22:38:06.542" level="INFO">Clicking element 'xpath:/html/body/div[1]/div/section/section[1]/div[1]/div[1]/div/div/div[2]/div[2]/a[2]/div/div/section/div'.</msg>
+<status status="PASS" starttime="20220425 22:38:06.541" endtime="20220425 22:38:10.897"></status>
 </kw>
 <kw name="Get Score" library="ScorecardKeywords">
 <arguments>
@@ -1105,8 +1105,8 @@
 <assign>
 <var>${module_score}</var>
 </assign>
-<msg timestamp="20220425 22:22:49.422" level="INFO">${module_score} = 55.31</msg>
-<status status="PASS" starttime="20220425 22:22:45.037" endtime="20220425 22:22:49.422"></status>
+<msg timestamp="20220425 22:38:15.064" level="INFO">${module_score} = 55.31</msg>
+<status status="PASS" starttime="20220425 22:38:10.900" endtime="20220425 22:38:15.065"></status>
 </kw>
 <kw name="Convert To Number" library="BuiltIn">
 <doc>Converts the given item to a floating point number.</doc>
@@ -1116,18 +1116,18 @@
 <assign>
 <var>${module_score}</var>
 </assign>
-<msg timestamp="20220425 22:22:49.426" level="INFO">${module_score} = 55.31</msg>
-<status status="PASS" starttime="20220425 22:22:49.423" endtime="20220425 22:22:49.426"></status>
+<msg timestamp="20220425 22:38:15.066" level="INFO">${module_score} = 55.31</msg>
+<status status="PASS" starttime="20220425 22:38:15.065" endtime="20220425 22:38:15.067"></status>
 </kw>
-<msg timestamp="20220425 22:22:49.427" level="INFO">${inspire_score} = 55.31</msg>
-<status status="PASS" starttime="20220425 22:22:45.035" endtime="20220425 22:22:49.427"></status>
+<msg timestamp="20220425 22:38:15.068" level="INFO">${inspire_score} = 55.31</msg>
+<status status="PASS" starttime="20220425 22:38:10.898" endtime="20220425 22:38:15.068"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>INSPIRE SCORE from Scorecard: ${inspire_score}</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:22:49.429" endtime="20220425 22:22:49.432"></status>
+<status status="PASS" starttime="20220425 22:38:15.068" endtime="20220425 22:38:15.070"></status>
 </kw>
 <kw name="Run Keyword Unless" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments if ``condition`` is false.</doc>
@@ -1149,32 +1149,32 @@
 <arguments>
 <arg>Computed Overall ${module} Score: ${computed}</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:22:49.442" endtime="20220425 22:22:49.445"></status>
+<status status="PASS" starttime="20220425 22:38:15.074" endtime="20220425 22:38:15.076"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${module} Score from Scorecard ${displayed} ≈ Computed ${module} score ${computed}</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:22:49.446" endtime="20220425 22:22:49.450"></status>
+<status status="PASS" starttime="20220425 22:38:15.076" endtime="20220425 22:38:15.078"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${module} score is verified!</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:22:49.453" endtime="20220425 22:22:49.456"></status>
+<status status="PASS" starttime="20220425 22:38:15.078" endtime="20220425 22:38:15.080"></status>
 </kw>
-<status status="PASS" starttime="20220425 22:22:49.438" endtime="20220425 22:22:49.458"></status>
+<status status="PASS" starttime="20220425 22:38:15.072" endtime="20220425 22:38:15.081"></status>
 </kw>
-<status status="PASS" starttime="20220425 22:22:49.433" endtime="20220425 22:22:49.458"></status>
+<status status="PASS" starttime="20220425 22:38:15.070" endtime="20220425 22:38:15.081"></status>
 </kw>
-<status status="PASS" starttime="20220425 22:21:53.199" endtime="20220425 22:22:49.459"></status>
+<status status="PASS" starttime="20220425 22:37:17.710" endtime="20220425 22:38:15.082"></status>
 </kw>
 <tags>
 <tag>inspire</tag>
 </tags>
-<status status="PASS" starttime="20220425 22:21:53.196" endtime="20220425 22:22:49.461" critical="yes"></status>
+<status status="PASS" starttime="20220425 22:37:17.707" endtime="20220425 22:38:15.083" critical="yes"></status>
 </test>
 <test id="s1-t6" name="Scorecard: Verify Convert Overall calculation">
 <kw name="Verify Convert Pillar Score" library="ScorecardKeywords">
@@ -1183,29 +1183,147 @@
 <arguments>
 <arg>${scorecard_tab}</arg>
 </arguments>
-<msg timestamp="20220425 22:22:49.476" level="INFO">Clicking link 'xpath:/html/body/div/div/section/section[2]/div[1]/div[1]/a[1]'.</msg>
-<status status="PASS" starttime="20220425 22:22:49.475" endtime="20220425 22:22:55.671"></status>
+<msg timestamp="20220425 22:38:15.115" level="INFO">Clicking link 'xpath:/html/body/div/div/section/section[2]/div[1]/div[1]/a[1]'.</msg>
+<status status="PASS" starttime="20220425 22:38:15.114" endtime="20220425 22:38:21.375"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${convert_pillar}</arg>
 </arguments>
-<msg timestamp="20220425 22:22:55.673" level="INFO">Clicking element 'xpath:/html/body/div/div/section/section[1]/div[1]/div[1]/div/div[2]/div[2]/div[2]/div[2]'.</msg>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220425 22:23:00.023" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220425 22:22:57.770" endtime="20220425 22:23:00.024"></status>
+<msg timestamp="20220425 22:38:21.377" level="INFO">Clicking element 'xpath:/html/body/div[1]/div/section/section[1]/div[1]/div[1]/div/div/div[2]/div[2]/a[3]/div/div/section/div'.</msg>
+<status status="PASS" starttime="20220425 22:38:21.376" endtime="20220425 22:38:26.001"></status>
 </kw>
-<msg timestamp="20220425 22:23:00.244" level="FAIL">Element with locator 'xpath:/html/body/div/div/section/section[1]/div[1]/div[1]/div/div[2]/div[2]/div[2]/div[2]' not found.</msg>
-<status status="FAIL" starttime="20220425 22:22:55.671" endtime="20220425 22:23:00.244"></status>
+<kw name="Get Score" library="ScorecardKeywords">
+<arguments>
+<arg>${overall_convert_text}</arg>
+</arguments>
+<assign>
+<var>${convert_score}</var>
+</assign>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${module_xpath}</arg>
+</arguments>
+<assign>
+<var>${module_score}</var>
+</assign>
+<msg timestamp="20220425 22:38:30.322" level="INFO">${module_score} = 75.97</msg>
+<status status="PASS" starttime="20220425 22:38:26.003" endtime="20220425 22:38:30.323"></status>
 </kw>
-<status status="FAIL" starttime="20220425 22:22:49.474" endtime="20220425 22:23:00.245"></status>
+<kw name="Convert To Number" library="BuiltIn">
+<doc>Converts the given item to a floating point number.</doc>
+<arguments>
+<arg>${module_score}</arg>
+</arguments>
+<assign>
+<var>${module_score}</var>
+</assign>
+<msg timestamp="20220425 22:38:30.324" level="INFO">${module_score} = 75.97</msg>
+<status status="PASS" starttime="20220425 22:38:30.323" endtime="20220425 22:38:30.324"></status>
+</kw>
+<msg timestamp="20220425 22:38:30.325" level="INFO">${convert_score} = 75.97</msg>
+<status status="PASS" starttime="20220425 22:38:26.001" endtime="20220425 22:38:30.325"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>CONVERT SCORE from Scorecard: ${convert_score}</arg>
+</arguments>
+<status status="PASS" starttime="20220425 22:38:30.325" endtime="20220425 22:38:30.327"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${convert_tab}</arg>
+</arguments>
+<msg timestamp="20220425 22:38:30.328" level="INFO">Clicking link 'xpath:/html/body/div/div/section/section[2]/div[1]/div[1]/a[5]'.</msg>
+<status status="PASS" starttime="20220425 22:38:30.327" endtime="20220425 22:38:36.616"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Accessing Convert Modules...</arg>
+</arguments>
+<status status="PASS" starttime="20220425 22:38:36.616" endtime="20220425 22:38:36.618"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${convert_table}</arg>
+<arg>60s</arg>
+</arguments>
+<status status="PASS" starttime="20220425 22:38:36.618" endtime="20220425 22:38:45.265"></status>
+</kw>
+<kw name="Get Score" library="ScorecardKeywords">
+<arguments>
+<arg>${overall_display_text}</arg>
+</arguments>
+<assign>
+<var>${stock_score}</var>
+</assign>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${module_xpath}</arg>
+</arguments>
+<assign>
+<var>${module_score}</var>
+</assign>
+<msg timestamp="20220425 22:38:49.408" level="INFO">${module_score} = 75.97</msg>
+<status status="PASS" starttime="20220425 22:38:45.267" endtime="20220425 22:38:49.408"></status>
+</kw>
+<kw name="Convert To Number" library="BuiltIn">
+<doc>Converts the given item to a floating point number.</doc>
+<arguments>
+<arg>${module_score}</arg>
+</arguments>
+<assign>
+<var>${module_score}</var>
+</assign>
+<msg timestamp="20220425 22:38:49.410" level="INFO">${module_score} = 75.97</msg>
+<status status="PASS" starttime="20220425 22:38:49.409" endtime="20220425 22:38:49.410"></status>
+</kw>
+<msg timestamp="20220425 22:38:49.411" level="INFO">${stock_score} = 75.97</msg>
+<status status="PASS" starttime="20220425 22:38:45.266" endtime="20220425 22:38:49.411"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Computed Overall Stock Score: ${stock_score}</arg>
+</arguments>
+<status status="PASS" starttime="20220425 22:38:49.411" endtime="20220425 22:38:49.413"></status>
+</kw>
+<kw name="Should Be Equal As Numbers" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<arguments>
+<arg>${convert_score}</arg>
+<arg>${stock_score}</arg>
+<arg>precision=2</arg>
+</arguments>
+<status status="PASS" starttime="20220425 22:38:49.413" endtime="20220425 22:38:49.414"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Convert Score from Scorecard ${convert_score} ≈ Computed Display score ${stock_score}</arg>
+</arguments>
+<status status="PASS" starttime="20220425 22:38:49.415" endtime="20220425 22:38:49.416"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Convert score is verified!</arg>
+</arguments>
+<status status="PASS" starttime="20220425 22:38:49.417" endtime="20220425 22:38:49.418"></status>
+</kw>
+<status status="PASS" starttime="20220425 22:38:15.113" endtime="20220425 22:38:49.418"></status>
 </kw>
 <tags>
 <tag>convert</tag>
 </tags>
-<status status="FAIL" starttime="20220425 22:22:49.469" endtime="20220425 22:23:00.247" critical="yes">Element with locator 'xpath:/html/body/div/div/section/section[1]/div[1]/div[1]/div/div[2]/div[2]/div[2]/div[2]' not found.</status>
+<status status="PASS" starttime="20220425 22:38:15.111" endtime="20220425 22:38:49.419" critical="yes"></status>
 </test>
 <test id="s1-t7" name="Scorecard: Verify Overall % calculation">
 <kw name="Verify Overall Score" library="ScorecardKeywords">
@@ -1214,8 +1332,8 @@
 <arguments>
 <arg>${scorecard_tab}</arg>
 </arguments>
-<msg timestamp="20220425 22:23:00.258" level="INFO">Clicking link 'xpath:/html/body/div/div/section/section[2]/div[1]/div[1]/a[1]'.</msg>
-<status status="PASS" starttime="20220425 22:23:00.257" endtime="20220425 22:23:06.409"></status>
+<msg timestamp="20220425 22:38:49.428" level="INFO">Clicking link 'xpath:/html/body/div/div/section/section[2]/div[1]/div[1]/a[1]'.</msg>
+<status status="PASS" starttime="20220425 22:38:49.428" endtime="20220425 22:38:55.653"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
@@ -1223,7 +1341,8 @@
 <arg>${overall_text}</arg>
 <arg>60s</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:23:06.410" endtime="20220425 22:23:10.550"></status>
+<msg timestamp="20220425 22:38:57.762" level="INFO">Suppressing StaleElementReferenceException from Selenium.</msg>
+<status status="PASS" starttime="20220425 22:38:55.654" endtime="20220425 22:39:02.199"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of the element identified by ``locator``.</doc>
@@ -1233,9 +1352,9 @@
 <assign>
 <var>${overall_score}</var>
 </assign>
-<msg timestamp="20220425 22:23:14.654" level="INFO">${overall_score} = 54.15
+<msg timestamp="20220425 22:39:06.308" level="INFO">${overall_score} = 54.15
 %</msg>
-<status status="PASS" starttime="20220425 22:23:10.550" endtime="20220425 22:23:14.654"></status>
+<status status="PASS" starttime="20220425 22:39:02.200" endtime="20220425 22:39:06.308"></status>
 </kw>
 <kw name="Remove String" library="String">
 <doc>Removes all ``removables`` from the given ``string``.</doc>
@@ -1246,9 +1365,9 @@
 <assign>
 <var>${overall_score}</var>
 </assign>
-<msg timestamp="20220425 22:23:14.657" level="INFO">${overall_score} = 54.15
+<msg timestamp="20220425 22:39:06.309" level="INFO">${overall_score} = 54.15
 </msg>
-<status status="PASS" starttime="20220425 22:23:14.655" endtime="20220425 22:23:14.657"></status>
+<status status="PASS" starttime="20220425 22:39:06.308" endtime="20220425 22:39:06.309"></status>
 </kw>
 <kw name="Convert To Number" library="BuiltIn">
 <doc>Converts the given item to a floating point number.</doc>
@@ -1258,15 +1377,15 @@
 <assign>
 <var>${overall_score}</var>
 </assign>
-<msg timestamp="20220425 22:23:14.659" level="INFO">${overall_score} = 54.15</msg>
-<status status="PASS" starttime="20220425 22:23:14.657" endtime="20220425 22:23:14.659"></status>
+<msg timestamp="20220425 22:39:06.311" level="INFO">${overall_score} = 54.15</msg>
+<status status="PASS" starttime="20220425 22:39:06.310" endtime="20220425 22:39:06.311"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>Overall score = ${overall_score}</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:23:14.659" endtime="20220425 22:23:14.661"></status>
+<status status="PASS" starttime="20220425 22:39:06.311" endtime="20220425 22:39:06.313"></status>
 </kw>
 <kw name="Compute Percentage per module" library="ScorecardKeywords">
 <arguments>
@@ -1291,8 +1410,8 @@
 <assign>
 <var>${module_score}</var>
 </assign>
-<msg timestamp="20220425 22:23:18.799" level="INFO">${module_score} = 23.91</msg>
-<status status="PASS" starttime="20220425 22:23:14.664" endtime="20220425 22:23:18.799"></status>
+<msg timestamp="20220425 22:39:10.482" level="INFO">${module_score} = 23.91</msg>
+<status status="PASS" starttime="20220425 22:39:06.316" endtime="20220425 22:39:10.482"></status>
 </kw>
 <kw name="Convert To Number" library="BuiltIn">
 <doc>Converts the given item to a floating point number.</doc>
@@ -1302,18 +1421,18 @@
 <assign>
 <var>${module_score}</var>
 </assign>
-<msg timestamp="20220425 22:23:18.801" level="INFO">${module_score} = 23.91</msg>
-<status status="PASS" starttime="20220425 22:23:18.800" endtime="20220425 22:23:18.801"></status>
+<msg timestamp="20220425 22:39:10.484" level="INFO">${module_score} = 23.91</msg>
+<status status="PASS" starttime="20220425 22:39:10.483" endtime="20220425 22:39:10.485"></status>
 </kw>
-<msg timestamp="20220425 22:23:18.803" level="INFO">${module_score} = 23.91</msg>
-<status status="PASS" starttime="20220425 22:23:14.663" endtime="20220425 22:23:18.803"></status>
+<msg timestamp="20220425 22:39:10.485" level="INFO">${module_score} = 23.91</msg>
+<status status="PASS" starttime="20220425 22:39:06.314" endtime="20220425 22:39:10.486"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>Overall Module score = ${module_score}</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:23:18.803" endtime="20220425 22:23:18.805"></status>
+<status status="PASS" starttime="20220425 22:39:10.486" endtime="20220425 22:39:10.488"></status>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <doc>Evaluates the given expression in Python and returns the result.</doc>
@@ -1323,18 +1442,18 @@
 <assign>
 <var>${module_percentage}</var>
 </assign>
-<msg timestamp="20220425 22:23:18.808" level="INFO">${module_percentage} = 7.173</msg>
-<status status="PASS" starttime="20220425 22:23:18.807" endtime="20220425 22:23:18.808"></status>
+<msg timestamp="20220425 22:39:10.489" level="INFO">${module_percentage} = 7.173</msg>
+<status status="PASS" starttime="20220425 22:39:10.488" endtime="20220425 22:39:10.489"></status>
 </kw>
-<msg timestamp="20220425 22:23:18.809" level="INFO">${display} = 7.173</msg>
-<status status="PASS" starttime="20220425 22:23:14.661" endtime="20220425 22:23:18.809"></status>
+<msg timestamp="20220425 22:39:10.490" level="INFO">${display} = 7.173</msg>
+<status status="PASS" starttime="20220425 22:39:06.313" endtime="20220425 22:39:10.490"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>Display Percentage: ${display}</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:23:18.809" endtime="20220425 22:23:18.811"></status>
+<status status="PASS" starttime="20220425 22:39:10.491" endtime="20220425 22:39:10.492"></status>
 </kw>
 <kw name="Compute Percentage per module" library="ScorecardKeywords">
 <arguments>
@@ -1359,8 +1478,8 @@
 <assign>
 <var>${module_score}</var>
 </assign>
-<msg timestamp="20220425 22:23:22.928" level="INFO">${module_score} = 55.31</msg>
-<status status="PASS" starttime="20220425 22:23:18.815" endtime="20220425 22:23:22.928"></status>
+<msg timestamp="20220425 22:39:14.614" level="INFO">${module_score} = 55.31</msg>
+<status status="PASS" starttime="20220425 22:39:10.495" endtime="20220425 22:39:14.615"></status>
 </kw>
 <kw name="Convert To Number" library="BuiltIn">
 <doc>Converts the given item to a floating point number.</doc>
@@ -1370,18 +1489,18 @@
 <assign>
 <var>${module_score}</var>
 </assign>
-<msg timestamp="20220425 22:23:22.930" level="INFO">${module_score} = 55.31</msg>
-<status status="PASS" starttime="20220425 22:23:22.928" endtime="20220425 22:23:22.930"></status>
+<msg timestamp="20220425 22:39:14.616" level="INFO">${module_score} = 55.31</msg>
+<status status="PASS" starttime="20220425 22:39:14.615" endtime="20220425 22:39:14.616"></status>
 </kw>
-<msg timestamp="20220425 22:23:22.931" level="INFO">${module_score} = 55.31</msg>
-<status status="PASS" starttime="20220425 22:23:18.813" endtime="20220425 22:23:22.931"></status>
+<msg timestamp="20220425 22:39:14.617" level="INFO">${module_score} = 55.31</msg>
+<status status="PASS" starttime="20220425 22:39:10.494" endtime="20220425 22:39:14.617"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>Overall Module score = ${module_score}</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:23:22.931" endtime="20220425 22:23:22.933"></status>
+<status status="PASS" starttime="20220425 22:39:14.618" endtime="20220425 22:39:14.619"></status>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <doc>Evaluates the given expression in Python and returns the result.</doc>
@@ -1391,18 +1510,18 @@
 <assign>
 <var>${module_percentage}</var>
 </assign>
-<msg timestamp="20220425 22:23:22.936" level="INFO">${module_percentage} = 16.593</msg>
-<status status="PASS" starttime="20220425 22:23:22.934" endtime="20220425 22:23:22.936"></status>
+<msg timestamp="20220425 22:39:14.622" level="INFO">${module_percentage} = 16.593</msg>
+<status status="PASS" starttime="20220425 22:39:14.620" endtime="20220425 22:39:14.622"></status>
 </kw>
-<msg timestamp="20220425 22:23:22.937" level="INFO">${inspire} = 16.593</msg>
-<status status="PASS" starttime="20220425 22:23:18.811" endtime="20220425 22:23:22.937"></status>
+<msg timestamp="20220425 22:39:14.623" level="INFO">${inspire} = 16.593</msg>
+<status status="PASS" starttime="20220425 22:39:10.493" endtime="20220425 22:39:14.623"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>Inspire Percentage: ${inspire}</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:23:22.938" endtime="20220425 22:23:22.939"></status>
+<status status="PASS" starttime="20220425 22:39:14.624" endtime="20220425 22:39:14.638"></status>
 </kw>
 <kw name="Compute Percentage per module" library="ScorecardKeywords">
 <arguments>
@@ -1427,8 +1546,8 @@
 <assign>
 <var>${module_score}</var>
 </assign>
-<msg timestamp="20220425 22:23:27.072" level="INFO">${module_score} = 75.97</msg>
-<status status="PASS" starttime="20220425 22:23:22.944" endtime="20220425 22:23:27.072"></status>
+<msg timestamp="20220425 22:39:18.791" level="INFO">${module_score} = 75.97</msg>
+<status status="PASS" starttime="20220425 22:39:14.641" endtime="20220425 22:39:18.791"></status>
 </kw>
 <kw name="Convert To Number" library="BuiltIn">
 <doc>Converts the given item to a floating point number.</doc>
@@ -1438,18 +1557,18 @@
 <assign>
 <var>${module_score}</var>
 </assign>
-<msg timestamp="20220425 22:23:27.075" level="INFO">${module_score} = 75.97</msg>
-<status status="PASS" starttime="20220425 22:23:27.073" endtime="20220425 22:23:27.075"></status>
+<msg timestamp="20220425 22:39:18.793" level="INFO">${module_score} = 75.97</msg>
+<status status="PASS" starttime="20220425 22:39:18.792" endtime="20220425 22:39:18.793"></status>
 </kw>
-<msg timestamp="20220425 22:23:27.077" level="INFO">${module_score} = 75.97</msg>
-<status status="PASS" starttime="20220425 22:23:22.942" endtime="20220425 22:23:27.077"></status>
+<msg timestamp="20220425 22:39:18.794" level="INFO">${module_score} = 75.97</msg>
+<status status="PASS" starttime="20220425 22:39:14.640" endtime="20220425 22:39:18.794"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>Overall Module score = ${module_score}</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:23:27.078" endtime="20220425 22:23:27.080"></status>
+<status status="PASS" starttime="20220425 22:39:18.795" endtime="20220425 22:39:18.797"></status>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <doc>Evaluates the given expression in Python and returns the result.</doc>
@@ -1459,18 +1578,18 @@
 <assign>
 <var>${module_percentage}</var>
 </assign>
-<msg timestamp="20220425 22:23:27.083" level="INFO">${module_percentage} = 30.388</msg>
-<status status="PASS" starttime="20220425 22:23:27.081" endtime="20220425 22:23:27.083"></status>
+<msg timestamp="20220425 22:39:18.798" level="INFO">${module_percentage} = 30.388</msg>
+<status status="PASS" starttime="20220425 22:39:18.797" endtime="20220425 22:39:18.798"></status>
 </kw>
-<msg timestamp="20220425 22:23:27.085" level="INFO">${convert} = 30.388</msg>
-<status status="PASS" starttime="20220425 22:23:22.940" endtime="20220425 22:23:27.085"></status>
+<msg timestamp="20220425 22:39:18.799" level="INFO">${convert} = 30.388</msg>
+<status status="PASS" starttime="20220425 22:39:14.639" endtime="20220425 22:39:18.799"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>Convert Percentage: ${convert}</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:23:27.085" endtime="20220425 22:23:27.088"></status>
+<status status="PASS" starttime="20220425 22:39:18.799" endtime="20220425 22:39:18.800"></status>
 </kw>
 <kw name="Compute Overall Score" library="ScorecardKeywords">
 <arguments>
@@ -1489,8 +1608,8 @@
 <assign>
 <var>${temp}</var>
 </assign>
-<msg timestamp="20220425 22:23:27.095" level="INFO">${temp} = 23.766</msg>
-<status status="PASS" starttime="20220425 22:23:27.093" endtime="20220425 22:23:27.095"></status>
+<msg timestamp="20220425 22:39:18.804" level="INFO">${temp} = 23.766</msg>
+<status status="PASS" starttime="20220425 22:39:18.803" endtime="20220425 22:39:18.804"></status>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <doc>Evaluates the given expression in Python and returns the result.</doc>
@@ -1500,18 +1619,18 @@
 <assign>
 <var>${result}</var>
 </assign>
-<msg timestamp="20220425 22:23:27.098" level="INFO">${result} = 54.153999999999996</msg>
-<status status="PASS" starttime="20220425 22:23:27.096" endtime="20220425 22:23:27.098"></status>
+<msg timestamp="20220425 22:39:18.805" level="INFO">${result} = 54.153999999999996</msg>
+<status status="PASS" starttime="20220425 22:39:18.804" endtime="20220425 22:39:18.805"></status>
 </kw>
-<msg timestamp="20220425 22:23:27.099" level="INFO">${overall} = 54.153999999999996</msg>
-<status status="PASS" starttime="20220425 22:23:27.089" endtime="20220425 22:23:27.100"></status>
+<msg timestamp="20220425 22:39:18.807" level="INFO">${overall} = 54.153999999999996</msg>
+<status status="PASS" starttime="20220425 22:39:18.801" endtime="20220425 22:39:18.807"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>Computed Overall Score: ${overall}</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:23:27.100" endtime="20220425 22:23:27.102"></status>
+<status status="PASS" starttime="20220425 22:39:18.807" endtime="20220425 22:39:18.809"></status>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <doc>Evaluates the given expression in Python and returns the result.</doc>
@@ -1521,8 +1640,8 @@
 <assign>
 <var>${upper_range}</var>
 </assign>
-<msg timestamp="20220425 22:23:27.105" level="INFO">${upper_range} = 54.20399999999999</msg>
-<status status="PASS" starttime="20220425 22:23:27.103" endtime="20220425 22:23:27.105"></status>
+<msg timestamp="20220425 22:39:18.810" level="INFO">${upper_range} = 54.20399999999999</msg>
+<status status="PASS" starttime="20220425 22:39:18.809" endtime="20220425 22:39:18.811"></status>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <doc>Evaluates the given expression in Python and returns the result.</doc>
@@ -1532,8 +1651,8 @@
 <assign>
 <var>${lower_range}</var>
 </assign>
-<msg timestamp="20220425 22:23:27.106" level="INFO">${lower_range} = 54.104</msg>
-<status status="PASS" starttime="20220425 22:23:27.105" endtime="20220425 22:23:27.107"></status>
+<msg timestamp="20220425 22:39:18.812" level="INFO">${lower_range} = 54.104</msg>
+<status status="PASS" starttime="20220425 22:39:18.811" endtime="20220425 22:39:18.812"></status>
 </kw>
 <kw name="Run Keyword Unless" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments if ``condition`` is false.</doc>
@@ -1555,46 +1674,46 @@
 <arguments>
 <arg>Computed Overall ${module} Score: ${computed}</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:23:27.111" endtime="20220425 22:23:27.113"></status>
+<status status="PASS" starttime="20220425 22:39:18.815" endtime="20220425 22:39:18.817"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${module} Score from Scorecard ${displayed} ≈ Computed ${module} score ${computed}</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:23:27.114" endtime="20220425 22:23:27.115"></status>
+<status status="PASS" starttime="20220425 22:39:18.817" endtime="20220425 22:39:18.819"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${module} score is verified!</arg>
 </arguments>
-<status status="PASS" starttime="20220425 22:23:27.116" endtime="20220425 22:23:27.117"></status>
+<status status="PASS" starttime="20220425 22:39:18.819" endtime="20220425 22:39:18.820"></status>
 </kw>
-<status status="PASS" starttime="20220425 22:23:27.109" endtime="20220425 22:23:27.118"></status>
+<status status="PASS" starttime="20220425 22:39:18.814" endtime="20220425 22:39:18.821"></status>
 </kw>
-<status status="PASS" starttime="20220425 22:23:27.107" endtime="20220425 22:23:27.118"></status>
+<status status="PASS" starttime="20220425 22:39:18.812" endtime="20220425 22:39:18.821"></status>
 </kw>
-<status status="PASS" starttime="20220425 22:23:00.256" endtime="20220425 22:23:27.119"></status>
+<status status="PASS" starttime="20220425 22:38:49.426" endtime="20220425 22:39:18.822"></status>
 </kw>
 <tags>
 <tag>overall</tag>
 </tags>
-<status status="PASS" starttime="20220425 22:23:00.254" endtime="20220425 22:23:27.121" critical="yes"></status>
+<status status="PASS" starttime="20220425 22:38:49.424" endtime="20220425 22:39:18.824" critical="yes"></status>
 </test>
 <kw name="Close All Browsers" library="SeleniumLibrary" type="teardown">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20220425 22:23:27.129" endtime="20220425 22:23:31.387"></status>
+<status status="PASS" starttime="20220425 22:39:18.832" endtime="20220425 22:39:22.936"></status>
 </kw>
-<status status="FAIL" starttime="20220425 22:18:37.209" endtime="20220425 22:23:31.387"></status>
+<status status="PASS" starttime="20220425 22:34:09.965" endtime="20220425 22:39:22.936"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="6" fail="1">Critical Tests</stat>
-<stat pass="6" fail="1">All Tests</stat>
+<stat pass="7" fail="0">Critical Tests</stat>
+<stat pass="7" fail="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="0" fail="1">convert</stat>
+<stat pass="1" fail="0">convert</stat>
 <stat pass="1" fail="0">display</stat>
 <stat pass="1" fail="0">filter</stat>
 <stat pass="1" fail="0">inspire</stat>
@@ -1602,7 +1721,7 @@
 <stat pass="1" fail="0">start</stat>
 </tag>
 <suite>
-<stat pass="6" fail="1" id="s1" name="Scorecard">Scorecard</stat>
+<stat pass="7" fail="0" id="s1" name="Scorecard">Scorecard</stat>
 </suite>
 </statistics>
 <errors>
