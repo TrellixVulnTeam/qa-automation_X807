@@ -142,10 +142,14 @@ Verify Display Pillar Score
     ${overall}=     Compute Overall Score   ${searchwords}      ${visibility}       ${categories}
     Log to Console  Computed Overall Display Score: ${overall}
     ${upper_range}=  Evaluate    ${overall} + 0.05
+    Log to Console  upper range: ${upper_range}
     ${lower_range}=  Evaluate    ${overall} - 0.05
+    Log to Console  lower range: ${lower_range}
 
-    Run Keyword Unless      ${overall} > ${upper_range} and ${overall} < ${lower_range}
+    Run Keyword If      ${display_score} < ${upper_range} and ${display_score} > ${lower_range}
 ...     Passed Score  ${overall}    ${display_score}    Display
+...     ELSE    FAIL    Score from Scorecard: ${display_score} does not match Computed score: ${overall}
+#...     ELSE        Log to Console  Fail
 
 #    FOR     ${i}    IN RANGE    1   ${row}+1
 #        ${catbar}=      catenate    SEPARATOR=      ${display_catbar}       [${i}]/div[1]/label[2]
@@ -180,8 +184,9 @@ Verify Inspire Pillar Score
     ${inspire_score}=   Get Score       ${overall_inspire_text}
     Log to Console      INSPIRE SCORE from Scorecard: ${inspire_score}
 
-    Run Keyword Unless      ${overall} > ${upper_range} and ${overall} < ${lower_range}
+    Run Keyword If      ${inspire_score} < ${upper_range} and ${inspire_score} > ${lower_range}
 ...     Passed Score  ${overall}    ${inspire_score}    Inspire
+...     ELSE    FAIL    Score from Scorecard: ${inspire_score} does not match Computed score: ${overall}
 
 Passed Score
     [Arguments]     ${computed}    ${displayed}     ${module}
@@ -192,6 +197,7 @@ Passed Score
 
 Verify Convert Pillar Score
     Click Link          ${scorecard_tab}
+    Wait Until Element is Visible       ${convert_pillar}       60s
     Click Element       ${convert_pillar}
     ${convert_score}=   Get Score       ${overall_convert_text}
     Log to Console      CONVERT SCORE from Scorecard: ${convert_score}

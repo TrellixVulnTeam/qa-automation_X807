@@ -66,7 +66,7 @@ categories_pillar = "xpath:/html/body/div/div/section/section[1]/div[1]/div[1]/d
 sos_rankings = "xpath:/html/body/div/div/section/section[1]/div[1]/div[1]/div/div[2]/div[2]/div[2]"
 display_catbar = "xpath:/html/body/div[1]/div/section/section[1]/div[1]/div[1]/div/section/div[2]/div[3]/div[2]/div[1]/div"
 
-
+filtered_score = "xpath://*[@id=apexcharts363285]/div[1]/div[2]/div/div[1]/span[2]"
 
 #I CAN'T FREAKING ACCESS THE SCORE TREND!
 # scoretrend_container = "xpath:/html/body/div[1]/div/section/section[1]/div[1]/div[1]/div/section/div[1]/div[2]/div/div[1]/div"

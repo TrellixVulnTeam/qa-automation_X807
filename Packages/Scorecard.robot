@@ -9,7 +9,7 @@ Suite Teardown  Close All Browsers
 *** Variables ***
 ${browser}  chrome
 ${url}      https://accounts.detailonline.com/
-${user}     razer-own@mailinator.com
+${user}     zurn-own@mailinator.com
 ${pass}     d3t@1l@dm1n
 
 *** Test Cases ***
